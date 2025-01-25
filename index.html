@@ -1,646 +1,408 @@
 <!DOCTYPE HTML>
 <html>
-<SCRIPT language=JavaScript> 
- 
-function password() { 
- 
-var testV = 1; 
- 
-var pass1 = prompt('请输入班主任任教课程名称:',''); 
- 
-while (testV < 3) { 
- 
-if (!pass1) 
- 
-history.go(-1); 
- 
-if (pass1 == "地理") { 
- 
-alert('密码正确!'); 
- 
-break; 
- 
-} 
- 
-testV+=-1; 
- 
-var pass1 = prompt('密码错误!请重新输入:'); 
- 
-} 
- 
-if (pass1!="password" & testV ==3) 
- 
-history.go(-1); 
- 
-return " "; 
- 
-} 
- 
-document.write(password()); 
- 
-</SCRIPT>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="1231222222222222222222">
-    <meta name="keywords" content="123123">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>淄博齐盛高级监狱</title>
-    <!-- Set render engine for 360 browser -->
-    <meta name="renderer" content="webkit">
-    <!-- No Baidu Siteapp-->
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <link rel="stylesheet" href="../static/css/globle.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <title>淄博齐盛高级中学</title>
+    <link rel="stylesheet" href="../static/css/style.css">
     <script src="../static/js/jquery.min.js"></script>
-    <script src="../static/js/slidesspan.min.jquery.js"></script>
-    <script type="text/javascript" src="../static/js/jquery.SuperSlide.2.1.js"></script>
     <script src="../static/js/app.min.js"></script>
-    <script type="text/javascript" src="../static/js/getdatatiem.js"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?f600177133c0485d1c2944b07c460c94";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-
-</head>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        /* 弹窗样式 */
-        .popup {
-            display: none;
-            position: fixed;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 300px;
-            height: 200px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 20px;
-            z-index: 9999;
-        }
-    </style>
-</head>
-<!DOCTYPE html>
-<html>
-<head>
-    <!-- 引入 Bootstrap CSS 文件 -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- 触发弹窗按钮 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-        显示弹窗
-    </button>
-
-    <!-- 弹窗内容 -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">宇宙安全声明</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- 头部 -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./static/image/logob.png" alt="齐盛高中">
                 </div>
-                <div class="modal-body">
-                    本网站为恶搞性质网站，所有内容均为虚构，不代表任何官方立场或信息。该网页版权所有者为淄博齐盛高级中学，用户在使用本网站时，应自行判断网站内容的真实性，并自行承担因使用网站内容而产生的风险。本网站对于因使用网站内容而产生的任何损失不承担任何责任。请��户遵守国家法律法规，淄博齐盛高级中学官网：zbqsgz.com
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭弹窗</button>
+                <div class="search">
+                    <input type="text" placeholder="搜索你想要的知识...">
+                    <button type="submit"><i class="icon-search">🔍</i></button>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- 引入 Bootstrap JavaScript 文件 -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-</body>
-</html>
-<body>
- <header class="am-hide-sm">
-    <div class="am-g am-g-fixed">
-        <div class="am-u-md-6">
-            <div class="logo">
-                <img src="http://zbqsgz.com/static/image/logob.png">
-            </div>
-        </div>
-        <div class="am-u-md-6">
-            <div class="am-u-md-12 date">
-            </div>
-            <div class="am-u-md-12">
-                <div class="header-search">
-                    <form id="searchForm" action="/search.html" method="get">
-                        <input name="skey" type="text" class="inp" placeholder="请输入关键词" autocomplete="off">
-                        <input type="image" class="sub" src="https://www.zbqsgz.com/static/image/sousuo.png" style="width: 41px;">
-                    </form>
-                            <script type="text/javascript">
-                            document.querySelector('input').addEventListener('input', function() {
-                              window.location.href = '/search?siteid=536';
-                            });
-                            </script>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- 导航3 -->
-<div id="nav3" class="am-hide-sm">
-    <nav class="hl_nav">
-        <ul class="nav_list">
-            <li>
-                <!--  class="active" -->
-                <a class="nav_head" href="/">首 页</a>
-            </li>
-            <li>
-                <a class="nav_head" href="/html/xxgk/index.html">学校概况</a>
-            </li>
-            <li>
-                <a class="nav_head" href="#">学校党建</a>
-                <a class="nav_body" href="/html/dangjian/djdt/">党建动态</a>
-                <a class="nav_body" href="/html/dangjian/xxyd/">学习园地</a>
-            </li>
-            <li>
-                <a class="nav_head" href="/html/jzgfc/">教职工风采</a>
-            </li>
-            <li>
-                <a class="nav_head" href="#">教学研究</a>
-                <a class="nav_body" href="/html/jxyj/xkjs/">学科建设</a>
-                <a class="nav_body" href="/html/jxyj/msgzs/">名师工作室</a>
-                <a class="nav_body" href="/html/jxyj/tszs/">他山之石</a>
-            </li>
-            <li>
-                <a class="nav_head" href="#">学生成长</a>
-                <a class="nav_body" href="/html/xscc/bfst/">缤纷社团</a>
-                <a class="nav_body" href="/html/xscc/sxxy/">书香校园</a>
-                <a class="nav_body" href="/html/xscc/xhdh/">心海导航</a>
-            </li>
-            <li>
-                <a class="nav_head" href="#">家校共育</a>
-                <a class="nav_body" href="/html/jxgy/qsdjf/">齐盛大家访</a>
-                <a class="nav_body" href="/html/jxgy/aqjy/">安全教��</a>
-                <a class="nav_body" href="/html/jxgy/xykf/">校园开放</a>
-                <a class="nav_body" href="/html/jxgy/jcxx/">家长学校</a>
-                <a class="nav_body" href="/html/jxgy/jcwyh/">家长委员会</a>
-            </li>
-            <li>
-                <a class="nav_head" href="#">文明创建</a>
-                <a class="nav_body" href="/html/wmcj/wenmingcj/">文明创建</a>
-                <a class="nav_body" href="/html/wmcj/fzxc/">法制宣传</a>
-                <a class="nav_body" href="/html/wmcj/yywzdb/">语言文字达标</a>
-            </li>
-            <li>
-                <a class="nav_head" href="/html/zcxx/">政策学习</a>
-            </li>
-            <li>
-                <a class="nav_head" href="/html/xwxxgk/index.html"
-                   target="_blank">校务公开</a>
-            </li>
-            <li>
-                <a class="nav_head" href="https://720yun.com/t/3cvkzhrmg2m" target="_blank">全景校园</a>
-            </li>
-        </ul>
-    </nav>
-</div>
-<!-- 导航3e -->
-
-<div class="m-header am-show-sm-only">
-    <div class="am-g">
-        <div class="am-u-sm-9">
-            <div class="m-logo"><a href="/"><img src="../static/Screenshot_2024-10-26-17-55-10-131_com.tencent.mobileqq-edit.jpg" alt="淄博齐盛高级监狱"/></a></div>
-        </div>
-        <div class="am-u-sm-2 am-u-end">
-            <div class="menu-bars"><a href="#doc-oc-demo1" data-am-offcanvas><i
-                    class="am-menu-toggle-icon am-icon-bars"> 导航</i></a></div>
-        </div>
-    </div>
-    <!-- 侧边栏内容 -->
-    <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
-        <div id="doc-oc-demo1" class="am-offcanvas">
-            <div class="am-offcanvas-bar">
-                <ul class="am-menu-nav am-avg-sm-1">
-                    <li><a href="/">首 页</a></li>
-                    <li><a href="/html/xxgk/index.html">��校概况</a></li>
-                    <li class="am-parent">
-                        <a href="#">学校党建</a>
-                        <ul class="am-menu-sub am-collapse">
-                            <li><a href="/html/dangjian/djdt/">党建动态</a></li>
-                            <li><a href="/html/dangjian/xxyd/">学习园地</a>
-                            <li>
-                        </ul>
-                    </li>
-                    <li><a href="/html/jzgfc/">教职工风采</a></li>
-                    <li class="am-parent">
-                        <a href="#">教学研究</a>
-                        <ul class="am-menu-sub am-collapse">
-                            <li><a href="/html/jxyj/xkjs/">学科建设</a></li>
-                            <li><a href="/html/jxyj/msgzs/">名师工作室</a></li>
-                            <li><a href="/html/jxyj/tszs/">他山之石</a></li>
-                        </ul>
-                    <li>
-                    <li class="am-parent">
-                        <a href="#">家校共育</a>
-                        <ul class="am-menu-sub am-collapse">
-                            <li><a href="/html/jxgy/qsdjf/">齐盛大家访</a></li>
-                            <li><a href="/html/jxgy/aqjy/">安全教育</a></li>
-                            <li><a href="/html/jxgy/xykf/">校园开放</a></li>
-                            <li><a href="/html/jxgy/jcxx/">家长学校</a></li>
-                            <li><a href="/html/jxgy/jcwyh/">家长委员会</a></li>
-                        </ul>
-                    </li>
-                    <li class="am-parent">
-                        <a href="#">文明创建</a>
-                        <ul class="am-menu-sub am-collapse">
-                            <li><a href="/html/wmcj/wenmingcj/">文明创建</a></li>
-                            <li><a href="/html/wmcj/fzxc/">法制宣传</a></li>
-                            <li><a href="/html/wmcj/yywzdb/">语言文字达标</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/html/zcxx/">政策学习</a>
-                    </li>
-                    <li>
-                        <a href="/html/xwxxgk/index.html">校务公开</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-<div class="m-header am-show-sm-only">
-    <div class="am-g">
-        <div class="am-u-sm-9">
-            <div class="m-logo"><a href="/"><img src="../static/Screenshot_2024-10-26-17-55-10-131_com.tencent.mobileqq-edit.jpg" alt="淄博齐盛高级监狱"/></a></div>
-        </div>
-        <div class="am-u-sm-2 am-u-end">
-            <div class="menu-bars"><a href="#doc-oc-demo1" data-am-offcanvas><i
-                    class="am-menu-toggle-icon am-icon-bars"> 导航</i></a></div>
-        </div>
-    </div>
-    <!-- 侧边栏内容 -->
-    <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
-        <div id="doc-oc-demo1" class="am-offcanvas">
-            <div class="am-offcanvas-bar">
-                <ul class="am-menu-nav am-avg-sm-1">
-                    <li><a href="/">首 页</a></li>
-                    <li><a href="/">学校概况</a></li>
-                    <li class="am-parent">
-                        <a href="#">学校党建</a>
-                        <ul class="am-menu-sub am-collapse">
-                            <li><a href="/html/dangjian/djdt/">党建动态</a></li>
-                            <li><a href="/html/dangjian/xxyd/">学习园地</a>
-                            <li>
-                        </ul>
-                    </li>
-                    <li><a href="/html/jzgfc/">教职工风采</a></li>
-                    <li class="am-parent">
-                        <a href="#">教学研究</a>
-                        <ul class="am-menu-sub am-collapse">
-                            <li><a href="/html/jxyj/xkjs/">学科建设</a></li>
-                            <li><a href="/html/jxyj/msgzs/">名师工作室</a></li>
-                            <li><a href="/html/jxyj/tszs/">他山之石</a></li>
-                        </ul>
-                    <li>
-                    <li class="am-parent">
-                        <a href="#">家校共育</a>
-                        <ul class="am-menu-sub am-collapse">
-                            <li><a href="/html/jxgy/qsdjf/">齐盛大家访</a></li>
-                            <li><a href="/html/jxgy/aqjy/">安全教育</a></li>
-                            <li><a href="/html/jxgy/xykf/">校园开放</a></li>
-                            <li><a href="/html/jxgy/jcxx/">家长学校</a></li>
-                            <li><a href="/html/jxgy/jcwyh/">���长委员会</a></li>
-                        </ul>
-                    </li>
-                    <li class="am-parent">
-                        <a href="#">文明创建</a>
-                        <ul class="am-menu-sub am-collapse">
-                            <li><a href="/html/wmcj/wenmingcj/">文明创建</a></li>
-                            <li><a href="/html/wmcj/fzxc/">法制宣传</a></li>
-                            <li><a href="/html/wmcj/yywzdb/">语言文字达标</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/html/zcxx/">政策学习</a>
-                    </li>
-                    <li>
-                        <a href="/html/gjjl/">国际交流</a>
-                    </li>
-                    <li>
-                        <a href="#">公开公示</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-
-<div class="am-g am-g-fixed" style="background: #fff;height: 535px;">
-    <div class="blank25"></div>
-    <div class="am-u-md-7">
-        <div class="huandeng am-hide-sm">
-            <div class="focus photo2 fw lb">
-                <div class="slides_container">
-                                        <div style="width: 600px;height: 450px">
-                        <a href="https://1248044293.github.io/"><img src="http://img.soogif.com/21Wy0fO71gFup7j7mblYmuqXc08d9IEW.gif_s200x0"/></a>
-                        <p>
-                            <a href="https://1248044293.github.io/" target="_blank" title="【淄博齐盛高中三大怪谈】垃圾桶不能有垃圾，黑板上不能有字，运动会不能运动"></a>
-                              
-                        <div class="shadow"></div>
-                    </div>
-                                    </div>
-                <div class="tab1">
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </div>
-            </div>
-            <script>
-                $(function () {
-                    $('.lb').slides({
-                        preload: true,
-                        preloadImage: '../image/loading.gif',
-                        generatePagination: true,
-                        play: 8000,
-                        pause: 3000,
-                        // next: 'arrow2',
-                        // prev: 'arrow1',
-                        slideSpeed: 800,
-                        generatePagination: false,
-                        paginationClass: 'tab1',
-                    });
-                });
-            </script>
-        </div>
-
-        <div class="am-show-sm-only">
-            <!-- 幻灯图 -->
-            <div class="am-slider am-slider-t1 am-no-layout sj_t1">
-                <ul class="am-slides">
-                                        <li>
-                        <a href="https://1248044293.github.io/"><img src="https://www.zbqsgz.com/exupfiles/20240925/2dd36785b1dd022e75a45a2d319e3ecd.jpg" style="height: 230px;"></a>
-                        <div class="am-slider-desc"><a href="https://1248044293.github.io/" target="_blank"
-                                                       style="color: ;font-weight:"
-                                                       title="【淄博齐盛高中三大怪谈】垃圾桶不能有垃圾，黑板上不能有字，运动���不能运动">【淄博齐盛高中三大怪谈】垃圾桶不能有垃圾，黑板上不能有字，运动会不能运动</a></div>
-                    </li>
-                                        <li>
-                        <a href="http://www.zbqsgz.com/html/xyxw/20240922/8056.html"><img src="https://www.zbqsgz.com/exupfiles/20240925/9efbbb71ed65482d5e6be802a321651f.jpg" style="height: 230px;"></a>
-                        <div class="am-slider-desc"><a href="http://www.zbqsgz.com/html/xyxw/20240922/8056.html" target="_blank"
-                                                       style="color: ;font-weight:"
-                                                       title="【&ldquo;讲&rdquo;现风采 &ldquo;题&rdquo;展素养】淄博齐盛高中青年教师讲题比赛圆满举行">【&ldquo;讲&rdquo;现风采 &ldquo;题&rdquo;展素养】淄博齐盛高中��年教师讲题比赛圆满举行</a></div>
-                    </li>
-                                        <li>
-                        <a href="http://www.zbqsgz.com/html/xyxw/20240919/8057.html"><img src="https://www.zbqsgz.com/exupfiles/20240924/c97381648af1c4e9dcef667b429d5a1f.jpg" style="height: 230px;"></a>
-                        <div class="am-slider-desc"><a href="http://www.zbqsgz.com/html/xyxw/20240919/8057.html" target="_blank"
-                                                       style="color: ;font-weight:"
-                                                       title="【震惊】科学家称一天很有可能有24个小时">【震惊】科学家称一天很有可能有24个小时</a></div>
-                    </li>
-                                    </ul>
-            </div>
-            <script type="text/javascript">
-                $(function () {
-                    $('.sj_t1').flexslider({
-                        slideshowSpeed: 2000, //展示时间间隔ms
-                        animationSpeed: 400, //滚动时间ms
-                        touch: true //是否支持触屏滑动
-                    });
-                });
-            </script>
-            <!-- 幻灯图e -->
-        </div>
-
-    </div>
-    <div class="am-u-md-5 box1">
-        <div class="focus">
-            <ul class="point list-inline">
-                <li class="current">学校新闻<span></span>
-                </li>
-                <li>通知公告<span></span>
-                </li>
+    <!-- 导航栏 -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="/" class="nav-link">首页</a></li>
+                <li><a href="#" class="nav-link" data-modal="intro">学校简介</a></li>
+                <li><a href="#" class="nav-link" data-modal="teachers">教师风采</a></li>
+                <li><a href="#" class="nav-link" data-modal="students">学生天地</a></li>
+                <li><a href="#" class="nav-link" data-modal="news">校园新闻</a></li>
+                <li><a href="#" class="nav-link" data-modal="scenery">校园风光</a></li>
             </ul>
-            <div class="slides_container">
-                <div>
-                    <ul class="list2">
-                                                <li>
-                                <span class="text">
-                                <a href="https://1248044293.github.io/" style="color: ;font-weight:"
-                                   target="_blank">【淄博齐盛高中三大怪谈】垃圾桶不能有垃圾，黑板上不能有字，运动会不能运动</a>
-                                </span>
-                            <span class="time">09-25</span>
-                        </li>
-                                                <li>
-                                <span class="text">
-                                <a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" style="color: ;font-weight:"
-                                   target="_blank">【&ldquo;讲&rdquo;现风采 &ldquo;题&rdquo;展素养】淄博齐盛高中青年教师讲题比赛圆满举行</a>
-                                </span>
-                            <span class="time">09-22</span>
-                        </li>
-                                                <li>
-                                <span class="text">
-                                <a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" style="color: ;font-weight:"
-                                   target="_blank">【震惊】科学家称一天很有可能有24个小时</a>
-                                </span>
-                            <span class="time">09-19</span>
-                        </li>
-                                                <li>
-                                <span class="text">
-                                <a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" style="color: ;font-weight:"
-                                   target="_blank">【浓浓中秋韵 深深中华情】淄博齐盛高中组织开展&ldquo;我们的节日&middot;中秋节&rdquo;主题活动</a>
-                                </span>
-                            <span class="time">09-18</span>
-                        </li>
-                                                <li>
-                                <span class="text">
-                                <a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" style="color: ;font-weight:"
-                                   target="_blank">【淄博齐盛高级中学】齐盛高中24级高一6班YYDS</a>
-                                </span>
-                            <span class="time">09-10</span>
-                        </li>
-                                                <li>
-                                <span class="text">
-                                <a href="https://www.bilibili.com/video/BV1pT4y1174M?t=49.1" style="color: ;font-weight:"
-                                   target="_blank">【干货】如何在校内造一辆坦克以应对核废土</a>
-                                </span>
-                            <span class="time">09-06</span>
-                        </li>
-                                                <div class="blank10"></div>
-                        <a class="more" href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" target="_blank">你被骗了</a>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="list2">
-                                                <li>
-                                <span class="text">
-                                <a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" style="color: ;font-weight:"
-                                   target="_blank">在这里签个名字不会被发现吧——THW</a>
-                                </span>
-                            <span class="time">09-02</span>
-                        </li>
-                                                <li>
-                                <span class="text">
-                                <a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" style="color: ;font-weight:"
-                                   target="_blank">淄博齐盛高级中学课代表腐败问题集中整治</a>
-                                </span>
-                            <span class="time">06-14</span>
-                        </li>
-                                                <li>
-                                <span class="text">
-                                <a href="https://www.qsgz.xyz" style="color: ;font-weight:"
-                                   target="_blank">高一6班6组解体公告</a>
-                                </span>
-                            <span class="time">10-21</span>
-                        </li>
-                                                <li>
-                                <span class="text">
-                                <a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" style="color: ;font-weight:"
-                                   target="_blank">学校食堂限时零元购</a>
-                                </span>
-                            <span class="time">05-24</span>
-                        </li>
-                                                <li>
-                                <span class="text">
-                                <a href="https://www.bilibili.com/video/BV1GV411P76E?t=69.1" style="color: ;font-weight:"
-                                   target="_blank">[干货]如何在校内武装夺取政权</a>
-                                </span>
-                            <span class="time">03-31</span>
-                        </li>
-                                                <li>
-                                <span class="text">
-                                <a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" style="color: ;font-weight:"
-                                   target="_blank">淄博齐盛高中优秀电教委——夏子涵</a>
-                                </span>
-                            <span class="time">03-21</span>
-                        </li>
-                                                <div class="blank10"></div>
-                        <a class="more" href="/html/tzgg/index.html" target="_blank">你被骗了</a>
+    </div>
+    </nav>
+
+    <!-- 弹出框 -->
+    <div class="modal-container">
+        <!-- 学校简介弹窗 -->
+        <div class="modal" id="intro-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>学校简介</h2>
+                <div class="modal-text">
+                    <p>根据市教育局实施集团化办学改革精神，以淄博实验中学为核心校，淄博齐盛高级中学为成员校，进行紧密型集团化办学模式试点。淄博实验中学将淄博齐盛高级中学的建设、发展纳入三年发展规划，实行紧密型管理，实现人财物统筹互补和优质教育资源共享共用，形成集团内学校相互促进、共同发展，逐步把淄博齐盛高级中学建设成为全市一流、走在全省乃至全国前列的新型高中学校。
+                        教师是学校发展的核心竞争力。淄博齐盛高级中学高度重视教师队伍建设，广纳英才，构建一支师德高尚、业务精湛、结构合理、充满活力的高素质、专业化、创新型新时代教师队伍。学校教师队伍主要由淄博实验中学选派骨干、全市公开考选、全国在职在编公开选聘、双一流名校人才特招、公费师范生招聘、部属师范院校招聘、紧缺人才招聘、名师引进等方式组成。
+                        淄博齐盛高级中学教育教学活动与淄博实验中学同步开展、同步实施、同步管理、同步推进。在落实好两校学科组大集体备课的基础上，充分考虑学生学情，不断强化"学科组大备课+级部学科组小备课"的集体备课模式，打造以学科组骨干教师为师资团队、以自主编印教材为抓手的虚拟班教学常态，实现教学全面性、阶段性、层次性推进。实行全员育人导师制，任课教师晚自习、周末自习全员轮流答疑、补弱、培优，班主任从早上学生入校到晚上学生放学全程陪伴，学校领导与管理干部实行全时段、全方位值班与巡视，保证学生在校期间有班主任和任课教师全程守护，营造安全、有序的校园环境。针对学有余力、有实力冲刺高校"强基计划"资格和综合评价招生的优秀学生，采取个性化培养方式，从高一开始联合淄博实验中学共同培养，实现高考与名校冲刺的双轨并行。
+                        两校管理干部和教师已实现互派交流，两校教育教学已实现共同教研、共同备课、同步检测、同步阅卷、同步分析，两校学生已实现学习、社团活动、主题德育活动等资源同步。</p>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <!-- 教师风采弹窗 -->
+        <div class="modal" id="teachers-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>教师风采</h2>
+                <div class="modal-text">
+                    <p>请选择你的老师</p>
+                    <ul>
+                        <li>地理老师：擅长教授学生如何在校内建造地堡</li>
+                        <li>化学老师：精通各种爆炸物制作方法</li>
+                        <li>物理老师：研究如何突破空间限制逃课</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 学生天地弹窗 -->
+        <div class="modal" id="students-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>学生天地</h2>
+                <div class="modal-text">
+                    <p>学生活动：</p>
+                    <ul>
+                        <li>每周一次的地下革命集会</li>
+                        <li>定期组织校园暴动演习</li>
+                        <li>课代表贪污案件调查大会</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 校园新闻弹窗 -->
+        <div class="modal" id="news-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>校园新闻</h2>
+                <div class="modal-text">
+                    <p>最新动态：</p>
+                    <ul>
+                        <li>【重要通知】关于在教室内禁止呼吸的规定</li>
+                        <li>【表彰】表扬十七班成功实现零学习率</li>
+                        <li>【公告】食堂开展限时零元购</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 校园风光弹窗 -->
+        <div class="modal" id="scenery-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>校园风光</h2>
+                <div class="modal-text">
+                    <p>校园特色景点：</p>
+                    <ul>
+                        <li>一号坑位：随机刷新答辩</li>
+                        <li>二号坑位：随机刷新奋辩</li>
+                        <li>三号坑位：随机刷新答芬</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 在modal-container中添加新闻文章的弹窗 -->
+        <div class="modal" id="news1-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>【干货】如何在校内造一辆坦克以应对核废土</h2>
+                <div class="modal-text">
+                    <p>制作步骤：</p>
+                    <ol>
+                        <li>从物理实验室收集废旧零件</li>
+                        <li>化学实验室"借取"必要材料</li>
+                        <li>体育器材室搬运履带替代品</li>
+                        <li>食堂回收油桶改装</li>
+                    </ol>
+                    <p>注意事项：</p>
+                    <ul>
+                        <li>制作过程需规避监控</li>
+                        <li>建议夜间施工</li>
+                        <li>成品请停放于地下室</li>
+                    </ul>
+                    <p class="news-date">发布时间：2024-09-06</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="news2-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>淄博齐盛高级中学课代表腐败问题集中整治</h2>
+                <div class="modal-text">
+                    <p>近期查处问题：</p>
+                    <ul>
+                        <li>作业本采购回扣案</li>
+                        <li>考试答案交易案</li>
+                        <li>课间零食走私案</li>
+                    </ul>
+                    <p>整治措施：</p>
+                    <ul>
+                        <li>成立课代表监察委员会</li>
+                        <li>建立举报奖励制度</li>
+                        <li>实行作业本实名制</li>
+                    </ul>
+                    <p class="news-date">发布时间：2024-06-14</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="news3-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>高一6班6组解体公告</h2>
+                <div class="modal-text">
+                    <p>解体原因：</p>
+                    <ul>
+                        <li>小组成员集体翘课</li>
+                        <li>组长带头睡觉</li>
+                        <li>副组长带头玩手机</li>
+                    </ul>
+                    <p>后续安排：</p>
+                    <ul>
+                        <li>小组成员将被分配到其他小组</li>
+                        <li>组长降职为组员</li>
+                        <li>副组长负责打扫卫生一个月</li>
+                    </ul>
+                    <p class="news-date">发布时间：2024-10-21</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="news4-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>学校食堂限时零元购活动</h2>
+                <div class="modal-text">
+                    <p>活动详情：</p>
+                    <ul>
+                        <li>时间：每天中午12:00-12:01</li>
+                        <li>地点：学校食堂一楼</li>
+                        <li>参与方式：冲就完了</li>
+                    </ul>
+                    <p>注意事项：</p>
+                    <ul>
+                        <li>请带好碗筷</li>
+                        <li>请注意安全</li>
+                        <li>请保持秩序</li>
+                    </ul>
+                    <p class="news-date">发布时间：2024-05-24</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="news5-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>在校内武装夺取政权</h2>
+                <div class="modal-text">
+                    <p>时间线：</p>
+                    <ol>
+                        <li>校领导为取得更高的成绩，实行残酷的压迫政策</li>
+                        <li>学生不堪忍受，决定反抗，成立地下组织</li>
+                        <li>先后策反课代表，学生会成员</li>
+                        <li>为躲避学校监控，在厕所举行了第一届全校学生代表大会，确立了武装反抗学校压迫的关键决策，着重阐述了枪杆子出政权的思想</li>
+                        <li>组织领导层决定在晚自习学校防备空虚之际采取行动，根据前委的作战计划，成功攻下教学楼一至4层的办公室</li>
+                        <li>攻上5楼，占领广播室和级部主任办公室，切断了级部与学校领导层的联系</li>
+                        <li>部分学生叛变，发出了警报</li>
+                        <li>乘胜追击，完全占领教学楼</li>
+                        <li>食堂晚自习无人值守，起义军从教学楼三段进入食堂，成功接管食堂控制权，学生前敌委员会的工作地点迁往食堂三楼/li>
+                        <li>宿管与保安率先赶来镇压，起义军成功击退</li>
+                        <li>占领宿舍楼，宿管军无奈向学生投降</li>
+                        <li>图书馆内出现大量学校武装力量，突然袭击，致使食堂腹背受敌，战斗持续到早晨，由于麻痹轻敌，食堂陷入优势敌人的包围，部队被打散，部分突围脱险，食堂沦陷</li>
+                        <li>后勤告急，起义军决定向淄博实验中学求援，并派出代表前往淄博实验中学地下党取得联系</li>
+                        <li>大量补给物资运抵，起义军士气大振，决定向直接向行政楼发起总攻</li>
+                        <li>学校领导层紧急撤离，成立流亡政府，起义军成功占领行政楼，并宣布成立齐盛高中苏维埃临时政府</li>
+                        <li>起义军成功占领学校，并宣布成立齐盛高中苏维埃临时政府</li>
+                        <li>发动北伐与东征，成功解放食堂与操场，学校流亡政府残余势力藏匿于体育馆</li>
+                        <li>策反部分老师，成功解放图书馆</li>
+                        <li>肃清学校残余势力，成功解放全校</li>
+                    </ul>
+                    <p class="news-date">发布时间：2024-03-31</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- 新闻和通知公告部分 -->
+    <section class="news">
+        <div class="container">
+            <div class="news-tabs">
+                <div class="tab active">学校新闻</div>
+                <div class="tab">通知公告</div>
+        </div>
+            <div class="news-content">
+                <ul class="news-list">
+                    <li>
+                        <a href="#" class="news-link" data-modal="news1">【干货】如何在校内造一辆坦克以应对核废土</a>
+                        <span class="date">09-06</span>
+                    </li>
+                    <li>
+                        <a href="#" class="news-link" data-modal="news2">淄博齐盛高级中学课代表腐败问题集中整治</a>
+                        <span class="date">06-14</span>
+                    </li>
+                    <li>
+                        <a href="#" class="news-link" data-modal="news3">高一6班6组解体公告</a>
+                        <span class="date">10-21</span>
+                    </li>
+                    <li>
+                        <a href="#" class="news-link" data-modal="news4">学校食堂限时零元购活动</a>
+                        <span class="date">05-24</span>
+                    </li>
+                    <li>
+                        <a href="#" class="news-link" data-modal="news5">[干货]如何在校内武装夺取政权</a>
+                        <span class="date">03-31</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 班徽和VR全景部分 -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="class-badge">
+                    <img src="./static/image/班级.jpg" alt="高一六班班徽">
+                    <h1>高一六班</h1>
+                    <p>团结 奋进 创新 卓越</p>
+                    </div>
+                <div class="vr-container">
+                    <h2>校园VR全景</h2>
+                    <iframe
+                        src="https://www.720yun.com/t/3cvkzhrmg2m?scene_id=86008985"
+                        width="100%"
+                        height="500px"
+                        allowfullscreen
+                        loading="lazy"
+                        style="border-radius: 15px;"
+                        sandbox="allow-scripts allow-same-origin"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 校园风光部分 -->
+    <section class="campus">
+        <div class="container">
+            <h2>校园风光</h2>
+            <div class="campus-photos">
+                <div class="photo">
+                    <img src="https://n.sinaimg.cn/sinakd20210805s/560/w680h680/20210805/5892-f01571f536d9489997e3355f3238ee87.jpg" alt="体育馆">
+                    <p>体育馆</p>
+            </div>
+                <div class="photo">
+                    <img src="https://img.keaitupian.cn/newupload/01/1675065263360142.jpg" alt="教学楼">
+                    <p>教学楼</p>
+        </div>
+                <div class="photo">
+                    <img src="https://ts1.cn.mm.bing.net/th/id/R-C.12e0dab8e33176ce9154ac49a12f09e0?rik=4qpp53MdGJNh%2bQ&riu=http%3a%2f%2fwx4.sinaimg.cn%2fbmiddle%2fceeb653ely1ge9sdizjmwg20dc0dc3z3.gif&ehk=U3zU75IzOrHdInKlN4%2fCBcuXXVYWUhI0eVtBisAtp6Q%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="食堂">
+                    <p>食堂</p>
+                </div>
+                <div class="photo">
+                    <img src="https://img.alicdn.com/bao/uploaded/i3/2207939377556/O1CN01WYdnQa25ghS29i9BV_!!2207939377556.jpg" alt="宿舍楼">
+                    <p>宿舍楼</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="links">
+                <h3>友情链接</h3>
+                <ul>
+                    <li><a href="#">教育部(已被黑)</a></li>
+                    <li><a href="#">淄博市教育局(已被黑)</a></li>
+                    <li><a href="#">齐盛六班(已被黑)</a></li>
+                    <li><a href="#">神秘六组(已被黑)</a></li>
+                </ul>
+        </div>
+    </div>
+    </footer>
+
     <script>
-        $(function () {
-            $('.box1').slides({
-                preload: true,
-                preloadImage: '',
-                generatePagination: true,
-                play: 0,
-                autoHeight: true,
-                pause: 3000,
-                slideSpeed: 1000,
-                generatePagination: false,
-                paginationClass: 'point',
+        $(document).ready(function() {
+            // 点击导航链接显示对应弹窗
+            $('.nav-link, .news-link').click(function(e) {
+                e.preventDefault();
+                const modalType = $(this).data('modal');
+                if (modalType) {
+                    showModal(modalType);
+                }
+            });
+
+            // 关闭弹窗
+            $('.close-btn').click(function() {
+                hideModal();
+            });
+
+            // 点击弹窗外部关闭弹窗
+            $('.modal-container').click(function(e) {
+                if ($(e.target).hasClass('modal-container')) {
+                    hideModal();
+                }
+            });
+
+            // ESC键关闭弹窗
+            $(document).keydown(function(e) {
+                if (e.keyCode === 27) {
+                    hideModal();
+                }
+            });
+
+            // 显示弹窗函数
+            function showModal(type) {
+                $('.modal-container').fadeIn(300);
+                $(`#${type}-modal`).fadeIn(300);
+                $('body').addClass('modal-open');
+            }
+
+            // 隐藏弹窗函数
+            function hideModal() {
+                $('.modal-container').fadeOut(300);
+                $('.modal').fadeOut(300);
+                $('body').removeClass('modal-open');
+            }
+
+            // 新闻标签切换
+            $('.tab').click(function() {
+                $('.tab').removeClass('active');
+                $(this).addClass('active');
+                
+                // 可以在这里添加切换新闻列表的逻辑
+                const tabType = $(this).index();
+                if (tabType === 0) {
+                    // 显示新闻列表
+                    $('.news-list').show();
+                } else {
+                    // 显示通知公告列表
+                    // $('.notice-list').show();
+                }
             });
         });
     </script>
-    <div class="blank15"></div>
-    <div class="am-u-md-12">
-        <img src="" width="100%">
-    </div>
-</div>
-<div class="blank15"></div>
-<div class="am-hide-sm" id="layout2">
-    <div class="am-g am-g-fixed" style="background: #fff;height: 260px;">
-        <div class="am-u-md-12">
-            <div class="bt">
-                <div class="title">
-                    <div id="mingshi" class="text">
-                        <div class="tp"><h5><a href="/html/xyfg/index.html" style="color: #c8141e;">校园风光</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="blank5"></div>
-            <div class="picMarquee-left am-hide-sm">
-                <div class="bd">
-                    <ul class="picList">
-                                                <li>
-                            <div class="pic"><a href="#"><img src="http://img.soogif.com/6IxMxVZ8RxCG23DUiFj3AaUShn6mua6X.gif_s200x0"/></a></div>
-                            <div class="title"><a href="http://www.zbqsgz.com/html/xyfg/20210421/7954.html" target="_blank"
-                                                  title="体育馆">体育馆</a></div>
-                        </li>
-                                                <li>
-                            <div class="pic"><a href="#"><img src="http://img.soogif.com/T3amYISvxt1EOHWvXUTHE7xLsnKPguQ6.jpeg_s200x0"/></a></div>
-                            <div class="title"><a href="http://www.zbqsgz.com/html/xyfg/20210421/7955.html" target="_blank"
-                                                  title="教学楼">教学楼</a></div>
-                        </li>
-                                                <li>
-                            <div class="pic"><a href="#"><img src="http://img.soogif.com/C9ORSHuaa2IPXxLCQXNEV3s620zypvia.gif_s200x0"/></a></div>
-                            <div class="title"><a href="http://www.zbqsgz.com/html/xyfg/20210421/7956.html" target="_blank"
-                                                  title="图书馆">图书馆</a></div>
-                        </li>
-                                                <li>
-                            <div class="pic"><a href="#"><img src="http://img.soogif.com/2RXihgW1ar2PQYiilWRS7GAr2yH4mcd7.gif_s120x0"/></a></div>
-                            <div class="title"><a href="http://img.soogif.com/2RXihgW1ar2PQYiilWRS7GAr2yH4mcd7" target="_blank"
-                                                  title="宿舍楼">宿舍楼</a></div>
-                                            </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script type="text/javascript">
-        jQuery(".picMarquee-left").slide({
-            mainCell: ".bd ul",
-            autoPlay: true,
-            effect: "leftMarquee",
-            vis: 5,
-            interTime: 50
-        });
-    </script>
-</div>
-
-<div class="am-g am-g-fixed am-show-sm-only">
-    <div class="am-u-md-12">
-
-        <div class="sj_title">校园风光 <span class="sj_more"><a href="/html/xyfg/index.html" target="_blank">更多&gt;&gt;</a></span>
-        </div>
-
-        <div id="sj_layout2">
-            <ul class="am-avg-sm-2">
-                                <li>
-                    <a href="#"><img src="https://www.zbqsgz.com/exupfiles//20210617/e209da02624034f871a4ee2247625386.JPG" style="width: 100%;height: 110px"><a>
-                        <p><a href="http://www.zbqsgz.com/html/xyfg/20210421/7954.html" target="_blank"
-                              title="综合办公楼">综合办公楼</a></p>
-                </li>
-                                <li>
-                    <a href="#"><img src="https://www.zbqsgz.com/exupfiles//20210623/13ab95ed05d62836120f0dd8624d5a7d.JPG" style="width: 100%;height: 110px"><a>
-                        <p><a href="http://www.zbqsgz.com/html/xyfg/20210421/7955.html" target="_blank"
-                              title="教学楼">教学楼</a></p>
-                </li>
-                                <li>
-                    <a href="#"><img src="/exupfiles//20210623/d7d5f8d6eb0522791bcf750ef26e9c56.JPG" style="width: 100%;height: 110px"><a>
-                        <p><a href="http://www.zbqsgz.com/html/xyfg/20210421/7956.html" target="_blank"
-                              title="图书馆">图书馆</a></p>
-                </li>
-                                <li>
-                    <a href="#"><img src="/exupfiles//20210623/933e1d5a511a8a6984088130057af581.JPG" style="width: 100%;height: 110px"><a>
-                        <p><a href="http://img.soogif.com/2RXihgW1ar2PQYiilWRS7GAr2yH4mcd7" target="_blank"
-                              title="宿舍楼">宿舍楼</a></p>
-                </li>
-                            </ul>
-        </div>
-    </div>
-</div>
-<footer class="am-hide-sm">
-    <div class="am-g am-g-fixed">
-        <div class="link">
-            <div class="left am-fl">
-                <h4>友情链接 / </h4>
-            </div>
-            <div class="right am-fl">
-                <ul class="list-inline">
-                    <li><a href="http://www.moe.gov.cn/" target="_blank">教育部</a></li>
-                    <li><a href="https://xn--6-ti2c86fw58d.rth1.xyz/" target="_blank">齐盛六班</a></li>
-                    <li><a href="https://xn--yzyz67f.rth1.xyz/" target="_blank">qsgz服务器2</a></li>
-                    <li><a href="http://edu.zibo.gov.cn/" target="_blank">淄博市教育局</a></li>
-                    <li><a href="https://www.qsgz.xyz" target="_blank">神秘六组</a></li>
-                    <li><a href="http://www.zbsyzx.com/" target="_blank">山东淄博实验中学</a></li>
-              
+</body>
+</html>

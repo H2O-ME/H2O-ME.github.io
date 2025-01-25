@@ -1,0 +1,35 @@
+/* 修改 header 样式 */
+header {
+    background: url(../static/Screenshot_2024-10-26-17-55-10-131_com.tencent.mobileqq-edit.jpg);
+    background-size: cover;
+    height: 165px;
+}
+
+/* 修改轮播图样式 */
+.slides_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 修改校园风光样式 */
+.picMarquee-left .pic img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+}
+
+/* 添加移动端适配 */
+@media screen and (max-width: 768px) {
+    header {
+        height: 100px;
+    }
+    
+    .slides_container {
+        height: 200px;
+    }
+    
+    .picMarquee-left {
+        display: none;
+    }
+} 
