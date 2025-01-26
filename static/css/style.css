@@ -20,11 +20,15 @@ body {
     box-sizing: border-box;
 }
 
+/* 页面标题样式 */
+/* 删除page-title相关样式 */
+
 /* 头部样式 */
 header {
     background: #c8141e;
-    height: 100px;
+    height: 90px;
     position: relative;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .header-content {
@@ -34,13 +38,33 @@ header {
     align-items: center;
 }
 
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
 .logo {
     margin: 0;
 }
 
 .logo img {
     height: 70px;
-    margin-top: 15px;
+    display: block;
+}
+
+/* 标题样式 */
+.logo-title h1 {
+    color: #fff;
+    font-size: 32px;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3),
+                 0 0 20px rgba(255,255,255,0.2),
+                 -1px -1px 0 rgba(0,0,0,0.2);
+    letter-spacing: 3px;
 }
 
 .search {
