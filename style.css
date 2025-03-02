@@ -32,4 +32,95 @@ header {
     .picMarquee-left {
         display: none;
     }
+}
+
+/* 移动端适配 */
+@media (max-width: 1200px) {
+    body {
+        min-width: auto;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .admission-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .calendar {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-title h1 {
+        font-size: 24px;
+    }
+    
+    .search {
+        width: 200px;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+    }
+    
+    .main-nav li {
+        flex: 0 0 50%;
+    }
+    
+    .main-nav a {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+    
+    .slide img {
+        height: 200px;
+    }
+    
+    .feature-item {
+        padding: 20px 15px;
+    }
+    
+    .modal {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .logo-title {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .search {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-nav li {
+        flex: 0 0 100%;
+    }
 } 
