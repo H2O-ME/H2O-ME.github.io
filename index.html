@@ -72,6 +72,9 @@
     <link rel="icon" href="/static/image/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon">
     
+    <!-- 添加jQuery (在CSS之前) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+    
     <!-- 先加载 CSS -->
     <link rel="stylesheet" href="/static/css/style.css">
     
@@ -864,82 +867,76 @@
     </div>
 
     <!-- 在 body 结束标签前加载 JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        // 确保 jQuery 加载
-        window.jQuery || document.write('<script src="/static/js/jquery.min.js"><\/script>');
+    (function($) {
+        'use strict';
         
-        // 添加错误处理
-        $(document).ready(function() {
-            console.log('jQuery is loaded and running');
+        // 等待DOM完全加载
+        $(function() {
+            console.log('DOM ready');
             
-            try {
-                // 你的所有 jQuery 代码放在这里
-                // 新闻标签切换
-                $('.news-tabs .tab').click(function() {
-                    $('.news-tabs .tab').removeClass('active');
-                    $(this).addClass('active');
-                    
-                    const tabIndex = $(this).index();
-                    if (tabIndex === 0) {
-                        $('.news-list.notices').hide();
-                        $('.news-list.news').show();
-                    } else {
-                        $('.news-list.news').hide();
-                        $('.news-list.notices').show();
-                    }
-                });
-
-                // 模态框处理
-                $('.news-link, .read-more').click(function(e) {
-                    e.preventDefault();
-                    const modalId = $(this).data('modal');
-                    if (modalId) {
-                        console.log("打开模态框: " + modalId);
-                        $('.modal-container').fadeIn(300);
-                        $(`#${modalId}-modal`).fadeIn(300);
-                        $('body').addClass('modal-open');
-                    }
-                });
-
-                // 关闭弹窗
-                $('.close-btn').click(function() {
-                    $('.modal, .modal-container').fadeOut(300);
-                    $('body').removeClass('modal-open');
-                });
-
-                // 滚动动画
-                function checkScroll() {
-                    $('.section-fade').each(function() {
-                        const elementTop = $(this).offset().top;
-                        const elementBottom = elementTop + $(this).outerHeight();
-                        const viewportTop = $(window).scrollTop();
-                        const viewportBottom = viewportTop + $(window).height();
-
-                        if (elementBottom > viewportTop && elementTop < viewportBottom) {
-                            $(this).addClass('active');
-                        }
-                    });
-                }
-
-                // 初始检查
-                checkScroll();
-
-                // 滚动时检查
-                $(window).scroll(function() {
-                    checkScroll();
-                });
-
-                // 添加动画类
-                $('.features, .campus-gallery, .admission, #footer').addClass('section-fade');
+            // 新闻标签切换
+            $('.news-tabs').on('click', '.tab', function() {
+                var $this = $(this);
+                $this.addClass('active').siblings().removeClass('active');
                 
-            } catch (error) {
-                console.error('Error in jQuery code:', error);
+                if ($this.index() === 0) {
+                    $('.news-list.notices').hide();
+                    $('.news-list.news').show();
+                } else {
+                    $('.news-list.news').hide();
+                    $('.news-list.notices').show();
+                }
+            });
+
+            // 模态框处理
+            $(document).on('click', '.news-link, .read-more', function(e) {
+                e.preventDefault();
+                var modalId = $(this).data('modal');
+                if (modalId) {
+                    $('#' + modalId + '-modal').fadeIn(300);
+                    $('.modal-container').fadeIn(300);
+                    $('body').addClass('modal-open');
+                }
+            });
+
+            // 关闭弹窗
+            $(document).on('click', '.close-btn', function() {
+                $('.modal, .modal-container').fadeOut(300);
+                $('body').removeClass('modal-open');
+            });
+
+            // 滚动处理
+            function handleScroll() {
+                var scrollTop = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                
+                $('.section-fade').each(function() {
+                    var $element = $(this);
+                    var elementTop = $element.offset().top;
+                    
+                    if (elementTop < (scrollTop + windowHeight)) {
+                        $element.addClass('active');
+                    }
+                });
             }
+
+            // 初始化动画类
+            $('.features, .campus-gallery, .admission, #footer').addClass('section-fade');
+            
+            // 绑定滚动事件
+            $(window).on('scroll', handleScroll);
+            
+            // 初始检查
+            handleScroll();
+            
+            // 防止冲突的代码
+            window.addEventListener('error', function(e) {
+                console.warn('Caught error:', e.error);
+                return false;
+            }, true);
         });
+    })(jQuery);
     </script>
-    
-    <!-- 其他必要的 JS 文件 -->
-    <script src="/static/js/app.min.js"></script>
 </body>
 </html>
