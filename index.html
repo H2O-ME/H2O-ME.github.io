@@ -72,9 +72,10 @@
     <link rel="icon" href="/static/image/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon">
     
+    <!-- 先加载 CSS -->
     <link rel="stylesheet" href="/static/css/style.css">
-    <script src="/static/js/jquery.min.js"></script>
-    <script src="/static/js/app.min.js"></script>
+    
+    <!-- 添加内联样式 -->
     <style>
         .section-fade {
             opacity: 0;
@@ -862,126 +863,83 @@
         </div>
     </div>
 
+    <!-- 在 body 结束标签前加载 JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        // 确保 jQuery 加载
+        window.jQuery || document.write('<script src="/static/js/jquery.min.js"><\/script>');
+        
+        // 添加错误处理
         $(document).ready(function() {
-            // 点击导航链接显示对应弹窗
-            $('.nav-link').click(function(e) {
-                e.preventDefault();
-                const modalType = $(this).data('modal');
-                if (modalType) {
-                    console.log("导航点击: " + modalType);
-                    // 处理特定的逻辑
-                }
-            });
+            console.log('jQuery is loaded and running');
+            
+            try {
+                // 你的所有 jQuery 代码放在这里
+                // 新闻标签切换
+                $('.news-tabs .tab').click(function() {
+                    $('.news-tabs .tab').removeClass('active');
+                    $(this).addClass('active');
+                    
+                    const tabIndex = $(this).index();
+                    if (tabIndex === 0) {
+                        $('.news-list.notices').hide();
+                        $('.news-list.news').show();
+                    } else {
+                        $('.news-list.news').hide();
+                        $('.news-list.notices').show();
+                    }
+                });
 
-            // 新闻链接点击事件
-            $('.news-link, .read-more').click(function(e) {
-                e.preventDefault();
-                const modalId = $(this).data('modal');
-                if (modalId) {
-                    console.log("打开模态框: " + modalId);
-                    $('.modal-container').fadeIn(300);
-                    $(`#${modalId}-modal`).fadeIn(300);
-                    $('body').addClass('modal-open');
-                }
-            });
+                // 模态框处理
+                $('.news-link, .read-more').click(function(e) {
+                    e.preventDefault();
+                    const modalId = $(this).data('modal');
+                    if (modalId) {
+                        console.log("打开模态框: " + modalId);
+                        $('.modal-container').fadeIn(300);
+                        $(`#${modalId}-modal`).fadeIn(300);
+                        $('body').addClass('modal-open');
+                    }
+                });
 
-            // 关闭弹窗
-            $('.close-btn').click(function() {
-                $('.modal, .modal-container').fadeOut(300);
-                $('body').removeClass('modal-open');
-            });
-
-            // 点击弹窗外部关闭弹窗
-            $('.modal-container').click(function(e) {
-                if (e.target === this) {
+                // 关闭弹窗
+                $('.close-btn').click(function() {
                     $('.modal, .modal-container').fadeOut(300);
                     $('body').removeClass('modal-open');
-                }
-            });
-
-            // 标签切换
-            $('.news-tabs .tab').click(function() {
-                $('.news-tabs .tab').removeClass('active');
-                $(this).addClass('active');
-                
-                const tabIndex = $(this).index();
-                if (tabIndex === 0) {
-                    $('.news-list.notices').hide();
-                    $('.news-list.news').show();
-                } else {
-                    $('.news-list.news').hide();
-                    $('.news-list.notices').show();
-                }
-            });
-
-            // 添加滚动动画
-            function checkScroll() {
-                // 为每个主要区块添加淡入效果
-                $('.section-fade').each(function() {
-                    const elementTop = $(this).offset().top;
-                    const elementBottom = elementTop + $(this).outerHeight();
-                    const viewportTop = $(window).scrollTop();
-                    const viewportBottom = viewportTop + $(window).height();
-
-                    if (elementBottom > viewportTop && elementTop < viewportBottom) {
-                        $(this).addClass('active');
-                    }
                 });
 
-                // 为特色部分添加逐个淡入效果
-                $('.feature-item').each(function(index) {
-                    const elementTop = $(this).offset().top;
-                    const viewportBottom = $(window).scrollTop() + $(window).height();
-                    
-                    if (elementTop < viewportBottom) {
-                        setTimeout(() => {
+                // 滚动动画
+                function checkScroll() {
+                    $('.section-fade').each(function() {
+                        const elementTop = $(this).offset().top;
+                        const elementBottom = elementTop + $(this).outerHeight();
+                        const viewportTop = $(window).scrollTop();
+                        const viewportBottom = viewportTop + $(window).height();
+
+                        if (elementBottom > viewportTop && elementTop < viewportBottom) {
                             $(this).addClass('active');
-                        }, index * 200);
-                    }
-                });
-
-                // 为校园风光图片添加淡入缩放效果
-                $('.gallery-item').each(function(index) {
-                    const elementTop = $(this).offset().top;
-                    const viewportBottom = $(window).scrollTop() + $(window).height();
-                    
-                    if (elementTop < viewportBottom) {
-                        setTimeout(() => {
-                            $(this).addClass('active');
-                        }, index * 150);
-                    }
-                });
-
-                // 为VR容器添加动画效果
-                const vrContainer = $('.vr-container');
-                const vrContainerTop = vrContainer.offset().top;
-                const viewportBottom = $(window).scrollTop() + $(window).height();
-                
-                if (vrContainerTop < viewportBottom) {
-                    vrContainer.addClass('section-fade active');
+                        }
+                    });
                 }
-            }
 
-            // 修改最后一行,移除hero-section
-            $('.features, .campus-gallery, .admission, #footer').addClass('section-fade');
-            
-            // 初始检查
-            checkScroll();
-
-            // 滚动时检查
-            $(window).scroll(function() {
+                // 初始检查
                 checkScroll();
-            });
 
-            // 添加法律声明链接点击事件
-            $('.disclaimer-link').click(function(e) {
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $('.legal-disclaimer').offset().top - 100
-                }, 800);
-            });
+                // 滚动时检查
+                $(window).scroll(function() {
+                    checkScroll();
+                });
+
+                // 添加动画类
+                $('.features, .campus-gallery, .admission, #footer').addClass('section-fade');
+                
+            } catch (error) {
+                console.error('Error in jQuery code:', error);
+            }
         });
     </script>
+    
+    <!-- 其他必要的 JS 文件 -->
+    <script src="/static/js/app.min.js"></script>
 </body>
 </html>
