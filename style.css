@@ -1,67 +1,8 @@
-/* 基本重置 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* 容器样式 */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* Header 样式 */
+/* 修改 header 样式 */
 header {
-    background: url(/static/image/Screenshot_2024-10-26-17-55-10-131_com.tencent.mobileqq-edit.jpg);
+    background: url(../static/Screenshot_2024-10-26-17-55-10-131_com.tencent.mobileqq-edit.jpg);
     background-size: cover;
     height: 165px;
-    position: relative;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.logo-title {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo img {
-    height: 60px;
-    width: auto;
-}
-
-/* 导航栏样式 */
-.main-nav {
-    background: #e60012;
-    padding: 10px 0;
-}
-
-.main-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.main-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
 }
 
 /* 修改轮播图样式 */
@@ -85,101 +26,14 @@ header {
     }
     
     .slides_container {
-        height: 200px;
+        height: 150px;
     }
     
     .picMarquee-left {
         display: none;
     }
-}
 
-/* 移动端适配 */
-@media (max-width: 1200px) {
     body {
-        min-width: auto;
-    }
-    
-    .container {
-        width: 100%;
-        padding: 0 15px;
-    }
-    
-    .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .admission-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .calendar {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
-    .logo-title h1 {
-        font-size: 24px;
-    }
-    
-    .search {
-        width: 200px;
-    }
-    
-    .main-nav ul {
-        flex-wrap: wrap;
-    }
-    
-    .main-nav li {
-        flex: 0 0 50%;
-    }
-    
-    .main-nav a {
-        padding: 0 10px;
-        font-size: 14px;
-    }
-    
-    .slide img {
-        height: 200px;
-    }
-    
-    .feature-item {
-        padding: 20px 15px;
-    }
-    
-    .modal {
-        width: 95%;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-content {
-        flex-direction: column;
-        padding: 10px 0;
-    }
-    
-    .logo-title {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .search {
-        position: static;
-        transform: none;
-        margin-top: 15px;
-        width: 100%;
-    }
-    
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .main-nav li {
-        flex: 0 0 100%;
+        font-size: 16px;
     }
 } 

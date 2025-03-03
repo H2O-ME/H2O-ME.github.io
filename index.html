@@ -4,345 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    
-    <!-- SEO相关meta标签 -->
-    <title>淄博齐盛高级中学 - 淄博实验中学集团化办学成员校</title>
-    <meta name="description" content="淄博齐盛高级中学位于鲁泰大道以北，天津路以东，是2018年由市委市政府批准建设的公办普通高级中学。学校占地132亩，建筑面积68768平方米，各项设施配备全市一流。作为淄博实验中学集团化办学成员校，实施同步教研、共同备课、同步检测的教育模式。">
-    <meta name="keywords" content="淄博齐盛高级中学,齐盛高中,淄博实验中学,集团化办学,公办高中,淄博高中,山东高中,赵泮利">
-    <meta name="author" content="THW">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph标签 -->
-    <meta property="og:title" content="淄博齐盛高级中学 - 公办普通高级中学">
-    <meta property="og:description" content="淄博齐盛高级中学是2018年批准建设的公办普通高级中学，占地132亩，建筑面积68768平方米。作为淄博实验中学集团化办学成员校，致力于打造全市一流的新型高中学校。">
-    <meta property="og:image" content="/static/image/logob.png">
-    <meta property="og:url" content="https://h2o-me.github.io/">
-    
-    <!-- 添加结构化数据 -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "name": "淄博齐盛高级中学",
-        "description": "淄博齐盛高级中学是2018年由市委市政府批准建设的公办普通高级中学，占地132亩，建筑面积68768平方米。2021年秋季学期正式投入使用。",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "鲁泰大道以北，天津路以东",
-            "addressLocality": "淄博市",
-            "addressRegion": "山东省",
-            "addressCountry": "CN"
-        },
-        "telephone": "0533-3189080",
-        "email": "info@zbqsschool.edu.cn",
-        "url": "https://h2o-me.github.io/",
-        "foundingDate": "2018",
-        "areaServed": "淄博市",
-        "employee": [
-            {
-                "@type": "Person",
-                "name": "赵泮利",
-                "jobTitle": "校长"
-            },
-            {
-                "@type": "Person",
-                "name": "姜晓峰",
-                "jobTitle": "领导"
-            },
-            {
-                "@type": "Person",
-                "name": "程国涛",
-                "jobTitle": "领导"
-            },
-            {
-                "@type": "Person",
-                "name": "孟庆升",
-                "jobTitle": "领导"
-            }
-        ],
-        "award": [
-            "2023年全国CSP(信息学)第一轮认证淄博赛区优秀组织单位"
-        ],
-        "sameAs": [
-            "https://h2o-me.github.io/"
-        ]
-    }
-    </script>
-
-    <!-- 添加网站图标 -->
-    <link rel="icon" href="/static/image/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon">
-    
-    <!-- 添加jQuery (在CSS之前) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
-    
-    <!-- 先加载 CSS -->
-    <link rel="stylesheet" href="/static/css/style.css">
-    
-    <!-- 添加内联样式 -->
-    <style>
-        .section-fade {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s ease-out;
-        }
-
-        .section-fade.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .feature-item {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.5s ease-out;
-        }
-
-        .feature-item.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .gallery-item {
-            opacity: 0;
-            transform: scale(0.9);
-            transition: all 0.6s ease-out;
-        }
-
-        .gallery-item.active {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        /* Hero Section样式调整 */
-        .hero-section {
-            padding: 40px 0;
-            min-height: calc(100vh - 160px); /* 减去header和nav的高度 */
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-            align-items: start;
-        }
-
-        .slider-container {
-            width: 100%;
-            height: 500px; /* 增加轮播图高度 */
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .slider .slide {
-            height: 500px; /* 与container一致 */
-        }
-
-        .slider .slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .slide-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 20px;
-            background: linear-gradient(transparent, rgba(0,0,0,0.7));
-            color: white;
-        }
-
-        .slide-caption h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .slide-caption p {
-            font-size: 16px;
-        }
-
-        .news-highlights {
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            height: 500px; /* 与轮播图等高 */
-            display: flex;
-            flex-direction: column;
-        }
-
-        .news-tabs {
-            display: flex;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #f0f0f0;
-        }
-
-        .news-tabs .tab {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .news-tabs .tab.active {
-            color: #e60012;
-        }
-
-        .news-tabs .tab.active:after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: #e60012;
-        }
-
-        .news-list {
-            flex: 1;
-            overflow-y: auto;
-        }
-
-        .news-list li {
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .news-list li:last-child {
-            border-bottom: none;
-        }
-
-        .news-link {
-            flex: 1;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .news-link:hover {
-            color: #e60012;
-        }
-
-        .date {
-            color: #999;
-            font-size: 14px;
-            margin-left: 15px;
-        }
-
-        .more-link {
-            text-align: right;
-            padding: 10px 0;
-        }
-
-        .more-link a {
-            color: #e60012;
-            text-decoration: none;
-        }
-
-        /* Feature Section样式 */
-        .feature-section {
-            padding: 60px 0;
-            background: #f8f9fa;
-        }
-
-        .feature-grid {
-            margin-top: 30px;
-        }
-
-        .vr-container {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .vr-container h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #333;
-            font-size: 28px;
-        }
-
-        .vr-wrapper {
-            position: relative;
-            width: 100%;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .vr-wrapper iframe {
-            display: block;
-            border: none;
-            transition: all 0.3s ease;
-        }
-
-        .vr-wrapper:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-        }
-
-        /* 响应式调整 */
-        @media (max-width: 768px) {
-            .vr-container {
-                padding: 20px;
-            }
-
-            .vr-wrapper iframe {
-                height: 300px;
-            }
-        }
-
-        /* 法律声明样式 */
-        .legal-disclaimer {
-            margin-top: 30px;
-            padding: 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .legal-disclaimer h3 {
-            color: #fff;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-
-        .disclaimer-content {
-            color: #ccc;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        .disclaimer-content ol {
-            padding-left: 20px;
-            margin: 10px 0;
-        }
-
-        .disclaimer-content li {
-            margin-bottom: 8px;
-        }
-
-        .disclaimer-content strong {
-            color: #fff;
-            display: block;
-            margin-top: 15px;
-        }
-
-        .copyright .disclaimer-link {
-            color: #e60012;
-            text-decoration: none;
-        }
-
-        .copyright .disclaimer-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>淄博齐盛高级中学</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/app.min.js"></script>
 </head>
 <body>
     <!-- 页面标题 -->
@@ -352,7 +17,7 @@
             <div class="header-content">
                 <div class="logo-title">
                     <div class="logo">
-                        <img src="/static/image/logob.png" alt="齐盛高中">
+                        <img src="./static/image/logob.png" alt="淄博齐盛高级中学 Logo">
                     </div>
                     <h1>淄博齐盛高级中学</h1>
                 </div>
@@ -365,7 +30,7 @@
     </header>
 
     <!-- 导航栏 -->
-    <nav class="main-nav" aria-label="主导航">
+    <nav class="main-nav">
         <div class="container">
             <ul>
                 <li><a href="/" class="nav-link">齐盛高中第三方官网</a></li>
@@ -378,565 +43,360 @@
     </div>
     </nav>
 
-    <!-- 主要内容区域：轮播图+新闻公告 -->
-    <section class="hero-section" id="hero">
-        <div class="container">
-            <div class="hero-grid">
-                <!-- 左侧轮播图 -->
-                <div class="slider-container">
-                    <div class="slider">
-                        <div class="slide active">
-                            <img src="https://p0.itc.cn/q_70/images03/20221008/a427e2a06b34425bba186b404ade6ecb.png" alt="校园风光">
-                            <div class="slide-caption">
-                                <h3>欢迎来到淄博齐盛高级中学</h3>
-                                <p>与淄博实验中学携手，共创教育辉煌</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="https://p6.itc.cn/q_70/images03/20221008/24c216a9d59648479f6a68b3c44050cc.png" alt="学校活动">
-                            <div class="slide-caption">
-                                <h3>多彩校园活动</h3>
-                                <p>丰富多彩的学生活动，培养全面发展人才</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="https://p8.itc.cn/q_70/images03/20221008/73ee557db1f143a3be17e1e6a372f125.png" alt="优秀师生">
-                            <div class="slide-caption">
-                                <h3>优秀师资团队</h3>
-                                <p>优秀的教师团队，成就学生卓越未来</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-arrows">
-                        <button class="arrow prev">❮</button>
-                        <button class="arrow next">❯</button>
-                    </div>
-                    <div class="slider-dots">
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
+    <!-- 弹出框 -->
+    <div class="modal-container">
+        <!-- 学校简介弹窗 -->
+        <div class="modal" id="intro-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>学校简介</h2>
+                <div class="modal-text">
+                    <p>根据市教育局实施集团化办学改革精神，以淄博实验中学为核心校，淄博齐盛高级中学为成员校，进行紧密型集团化办学模式试点。淄博实验中学将淄博齐盛高级中学的建设、发展纳入三年发展规划，实行紧密型管理，实现人财物统筹互补和优质教育资源共享共用，形成集团内学校相互促进、共同发展，逐步把淄博齐盛高级中学建设成为全市一流、走在全省乃至全国前列的新型高中学校。
+                        教师是学校发展的核心竞争力。淄博齐盛高级中学高度重视教师队伍建设，广纳英才，构建一支师德高尚、业务精湛、结构合理、充满活力的高素质、专业化、创新型新时代教师队伍。学校教师队伍主要由淄博实验中学选派骨干、全市公开考选、全国在职在编公开选聘、双一流名校人才特招、公费师范生招聘、部属师范院校招聘、紧缺人才招聘、名师引进等方式组成。
+                        淄博齐盛高级中学教育教学活动与淄博实验中学同步开展、同步实施、同步管理、同步推进。在落实好两校学科组大集体备课的基础上，充分考虑学生学情，不断强化"学科组大备课+级部学科组小备课"的集体备课模式，打造以学科组骨干教师为师资团队、以自主编印教材为抓手的虚拟班教学常态，实现教学全面性、阶段性、层次性推进。实行全员育人导师制，任课教师晚自习、周末自习全员轮流答疑、补弱、培优，班主任从早上学生入校到晚上学生放学全程陪伴，学校领导与管理干部实行全时段、全方位值班与巡视，保证学生在校期间有班主任和任课教师全程守护，营造安全、有序的校园环境。针对学有余力、有实力冲刺高校"强基计划"资格和综合评价招生的优秀学生，采取个性化培养方式，从高一开始联合淄博实验中学共同培养，实现高考与名校冲刺的双轨并行。
+                        两校管理干部和教师已实现互派交流，两校教育教学已实现共同教研、共同备课、同步检测、同步阅卷、同步分析，两校学生已实现学习、社团活动、主题德育活动等资源同步。</p>
+                    </ul>
                 </div>
+            </div>
+        </div>
 
-                <!-- 右侧新闻公告 -->
-                <div class="news-highlights">
+        <!-- 教师风采弹窗 -->
+        <div class="modal" id="teachers-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>教师风采</h2>
+                <div class="modal-text">
+                    <p>请选择你的老师</p>
+                    <ul>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 学生天地弹窗 -->
+        <div class="modal" id="students-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>学生天地</h2>
+                <div class="modal-text">
+                    <p>学生活动：</p>
+                    <ul>
+                        <li>您是否试想过在宿舍自制一枚洲际弹道导弹？ 随着民间核武器的不断普及，越来越多的寝室也参与到了这场小规模的打闹中，绝大多数人已经不满足使用预埋式核武器攻击同桌。 坚固的堡垒，越来越多的人开始试图通过购买、租借或偷盗的方式来获得相对机动的民间载具。 而您蛋白质喷射课题也常常被隔壁宿舍干扰。 上次给你打磨五金师傅的铀235手中高价购入的B1B轻骑兵战略轰炸机所干扰。 由于您的晾衣杆貌似并不足以将5000万吨tt当量的手工鞭炮投送至隔壁寝室，显然这无疑是令人十分恼怒的。 您开始意识到此刻迫切需要一种射程，在7000至12000千米的手工艺品，以便于您尽早结束这场无休止的玩恼。</li>
+                        <li>如何解决这个令人头痛的问题呢？ 显然用灵巧的双手自制一枚中大型的固体燃料火箭是个不错的主意。 所以本期您的安全顾问陆哥将指导你着手自制一枚洲际弹道导弹，并辅助修改论文。 在上学期我们利用随处可见的材料制做了一颗约5000万吨T T当量的手工鞭炮。 与上次相同，您首先需要将寝室内并不属于自己的物品清除，包括但不限于舍友的桌椅板凳、波音747的杯子、6乘6半挂牵引、卡车下铺的麻辣拌，以及上次制作的手工清弹，以便于您有足够的空间完成手工艺品的制作。 值得注意的是，在移动氢弹的过程中请保持稳定，万一被炸到很痛不说，还容易导致您的午饭倾覆。 显然此次的手工制作需要较高的层高，为了能够引发不必要的冲突，您可以逼迫楼上宿舍自愿签订宿舍租赁条约，像上次那样利用汤匙打通楼上的宿舍，此时您便可以尝试着手制作了。 首先从宿舍楼下的公式中悄悄拿走约600个90升左右的油漆桶，并装进口袋，以规避被人发现的风险。 然后找到上次的五金师傅，让他切割并分别焊接成高约9米与4米，直径均为2.5米的两个金属管，以及一个高约2米，直径约1.6米的小金属管，分别作为我们的芯一级与芯二级推进装置，与上次相同。 请委托在中东地区留学的同伙购买一小瓶约33吨含氧量较高的高氯酸胺作为氧化剂，并通过德邦物流寄送至菜鸟驿站中。 然后去学校的文具店购买一小管约17吨质量较高的聚氨酯胶，也就是P油胶作为粘合剂。 为了保证足够的能量密度，您可以从校长办公室的铝制办公桌中打磨约1.3吨的铝粉并装入口袋。 财力相对雄厚或者对武器有着极高兴趣的同学，可以直接购买武季级铝合剂。 值得注意的是，以上的物品是安全、剧毒且不稳定的，为了防止出现异味，请不要与您的食品混合存放，否则可能会引发例如意外离世之类的小插曲。 然后从闲鱼上低价购入一台面包机，记得向卖家小刀，以便于节省宝贵的经费。 将以上的材料放置于面包机中充分混合，直到形成非牛顿流体即可得到固体火箭燃料，在此过程中，请勿将非牛顿流体与牛顿打出来的流体相混淆。 有趣的是，通常来说液体燃料发动机的推力更加可观，但考虑到学生们的生活经费以及日常的导弹维修导弹维修导弹还需要维修与战时装填时的便捷性，使用固体燃料作为推进剂似乎更为合理。 将金属管竖立，并在正中心用A 4纸搭建一个空心心型柱体，将刚刚的火箭燃料灌注在外侧并等待固化。 待固化结束后，您便能得到三个中空的固体燃料柱。 保留中空的目的是为了接触面的均匀燃烧，而中空位置设计成心型则是因为起飞初期重量最大，需要更大的推力，也就需要更大的燃烧接触面。 通常来说它的形状并不是一成不变的。 您可以在上铺制作微缩模型，以验证在不同接触面下对燃料的功耗影响。 此时您还需要准备一个质量较高并耐热的钢管用作火箭的外壳。 可以尝试将宿舍楼下的天然气管道切割并临时租借。 在此过程中可以对外壳进行个性化涂装，以彰显您的幽默。 将刚刚固化的燃料进行合理的搭建，并利用高度剂和电火花发生器来制作一个简易的点火装置。 您可以使用带有气压功能的加明手表与打火机串联，并连接上次核弹的起爆药作为助推器分离装置。 考虑到各位财力有限，可以使用民用C 4电子炮仗作为代替，通常在隔壁小学的小学生手里有概率刷新。 记得连接高度计到指定位置，打开最高画质的原神，以增加起爆几率。 固体燃料点火时的温度约为2500摄氏度，所以你需要准备一个质量较高的漏斗，将漏斗倒置，并利用502胶水牢固的粘结在新一级的尾端，一定要倒置。 这是拉瓦尔喷管，让在美国或中东地区留学的同伙帮你邮寄一台导航计算机，并利用圆通速递寄到你学校的快递柜里。 最后在载弹舱内放置质量足够高的防风打火机作为后掠飞行器，以调整手工载具的姿态与轨迹。 由于外太空没有氧气，所以你需要购入一瓶氧气作为助燃剂。 最后将上次的手工氢弹与导航计算机用透明胶带牢固的安装在这个手工二踢脚的头部末端，载入大气层时，弹头会与空气摩擦，产生常人难以忍受的高温，需要您发动您的聪明材质从容的解决。 显然绝大多数人认为使用冰块降温似乎不太可行，那该怎么办呢？ 有了您可以退而求其次使用隔热网。 值得注意的是，尽量不要试图安装不符合空气动力学的套件，以彰显您的智慧与个性。 显然，这就像告白气球要去法院一样的常识。 理论上来讲，在点火后，点火花会引燃新一级燃料，并把二踢脚送入足够的高度，到达指定高度后，高度即下达点火指令，起爆装置爆炸分离新一级并点燃新二级推进器。 同时二踢脚的整流罩分离，继续攀升高度，直到二级推进器燃料耗尽。 此时战斗不点火，导航计算机开始工作，控制载弹舱姿态，以确保手工核武器能够准确的落入隔壁宿舍。 </li>
+                        <li>相信经过以上的学习，您已经能够从容的将手工艺品投放至隔壁寝室，这将意味着您所在宿舍的威慑力量将会得到一定的提升。 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 校园新闻弹窗 -->
+        <div class="modal" id="news-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>校园新闻</h2>
+                <div class="modal-text">
+                    <p>最新动态：</p>
+                    <ul>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 校园风光弹窗 -->
+        <div class="modal" id="scenery-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>校园风光</h2>
+                <div class="modal-text">
+                    <p>校园特色景点：</p>
+                    <ul>
+                        <li>一号坑位：随机刷新答辩</li>
+                        <li>二号坑位：随机刷新奋辩</li>
+                        <li>三号坑位：随机刷新答芬</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 在modal-container中添加新闻文章的弹窗 -->
+        <div class="modal" id="news1-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>【干货】如何在校内造一辆坦克以应对核废土</h2>
+                <div class="modal-text">
+                    <p>您是否是想过在教室自制一台坦克？ 您是否在日常生活中遇到这样的困扰？ 在安静文雅的教室中，您正使用笔记本电脑学习初二语文与动力弹导学。 但总有一些心怀鬼胎的干部，利用各种非常规的方式分散您的注意力。 例如在您的前桌进食双层香辣鸡腿堡并发出不雅的咀嚼声，或在您的座位下面放置塞入0点四五安培雷管的C 4塑胶炸药。 很显然，这种行为看起来着实有些炸裂，可能将严重干扰您缜密的思绪，从而对您备考省部级副职干部带来严重的威胁。 对方的行为不光会使您无心早读，还会导致身边焊接复合装甲的同学学习效率下降。 面对如此卑劣的行为，是时候让我们动动收视，利用现有的知识和有限的材料，以相对合法的方式制裁他了。 </p>
+                    <p>首先您需要了解您的电脑仅仅只是基于现代工业下的普通聚合物。 这似乎无法抵御爆压约为33000兆帕的炸药袭击，所以我们可以对其加装适当的装甲加固。 事实上，在现实生活中，许多学生都会使用钢制或铝制的军制装甲保护自己的电脑，它能有效的抵御一些普通枪弹的袭击，和同学们相互投掷手雷的小打小闹。 但您似乎忽略了什么？ 是的，没错，您的挚友有很大的可能在背包内夹带rpg杠7型火箭助推榴弹以及穿甲装药，其产生的金属射流能轻松穿透至少200毫米的等效装甲，这无疑会对使用普通装甲的同学产生致命的威胁。 不妨让我们偷走同舟的复合装甲试试。 这是由钢制面板、氧化铝、陶瓷或方轮树脂基材料等复合而成的新型装甲。 当其被击中时，利用不同材料的密度与特性，快速对穿甲弹和金属射流产生极大的能量消耗。 值得注意的是，相比于数值贴合，带有一定倾斜角度的安装方式能够显著增加其等效距离以及增加跳弹的几率，这里并不推荐使用廉价的防弹衣和普通的家用陶瓷代替，有过使用经验并侥幸存活的同学表示，它的效果貌似有点不太理想。 值得注意的是，安装这么多的装甲绝对是个不折不扣的体力活。 为了放松身体，我给兄弟们推荐一波福利，一个被漂亮姐姐环绕的游戏，只需要试玩三分钟就能让你欲罢不能。 快点击评论区试试吧，带你体验温柔体贴的邻家女孩，活泼可爱的清纯学妹，漂亮妩媚的贴心姐姐，自由度极高，一切由你掌控。 传送门我放评论区了，快去试试吧。 不过随着智能装要办公用品的不断进步，再多的电脑也不足以抵御卑鄙的校园武装分子。 经费充裕或缺乏安全感的同学，可以额外搭配一层爆炸反应装甲配合使用。 这是一种由面板、夹层、炸药、背板所组成的新型爆炸反应单元。 当高温高速的金属射流击中爆反装甲时，夹层炸药、爆炸面板被炸飞。 在运动过程中不断对金属射流产生干扰，以此来削弱穿透力度或改变方向。 但您似乎没有考虑这对周围同学的影响。 诸多实验表明，当反应装甲爆炸时，距离60厘米内的同学受伤的概率将高达99.94%。 这无疑会对您的同桌的身心都带来一些不算积极的影响。 </p>
+                    <p>不过倒也无所谓，但仅仅只是防护，在早自习的战场环境中，仍然处于被动的局面。 不妨让我们联系上次提供导弹发射架的供货商，购买或偷到一根内径为120毫米的无缝钢管，以任意一种方式将管子安装在炮塔上并加入俯氧机。 或者找个好朋友扛着，将脱壳稳定翼穿甲弹填入，再随便找个同学利用锤子和铁凿击发，就可以有效的打击到正前方的同学。 值得注意的是，120毫米滑膛炮在发射时会产生稍大的后坐力，这可能会使负责击发的同学感到轻微的不适，严重的情况下可能导致鼓裂，同时在发射时也会产生大量的火药燃气。 需要您在炮管上额外加装一个废气抽尘器，通过在炮管上增加一个储气筒，在开炮时高压气体进入储气筒，当炮弹出膛时，炮管内的压力减小，高压气体通过喷嘴喷出，在炮口形成一个流速较快的低压区，把废气抽出去。 一些不拘小节且肺活量较大的同学也可以通过快速呼吸的方式解决。 除了多准备几个同学外，直接网络一台现成的二手坦克炮总成也是个不错的主意。 但这貌似远远不够，加装了火炮系统和装入的笔记本电脑，它的质量已经来到了将近30吨。 很显然，你应该无法将它装入35元的廉价牛仔背包中。 况且要是这个笔记本电脑不能动，那我上次的高速公路不他妈白造了吗？ 所以让我们去学校的地下室里悄悄拿走一台随处可见的二手坦克车底盘，然后准备一台燃气轮机，这是一种大马力的重型车辆发动机，有着能效高、声音大、燃量多样的特点，不光可以使用柴油，还可以使用汽油、煤油，甚至大部分可燃液体。 没有的话可以网购一台喷气式战斗机，并把引擎拆下来凑合着用。 将以上的玩意儿用透明胶带粘在一起，就是您的笔记本拥有了最初级的移动能力。 但您要知道，在复杂多变的早自习室内，您很有可能被任意方向的民间武装力量攻击，因此您的炮塔最好能够旋转这一部分有些困难。 您需要准备一个电滑环和非常精密的电子控制系统。 您可以联系校外的五金师傅，以市场价平均价格0.5倍强迫他帮您安装。 在21世纪现代校园战场作战环境中，越来越多的民间手工艺品也开始百花齐放。 因此，最好让他帮您加装一些简单实用的小设备，例如火炮、稳定单元、观瞄设备和无线电通讯系统。 记得在事后不要忘记给对方烤五个羊肉串。 内腰辣椒弹簧外挂以及烤咸鱼，咸鱼还要烤的干烘的，最后爆一箱啤酒，然后把帐记在他的头上。 </p>
+                    <p>毫无疑问，您最新改进的笔记本电脑看起来貌似像一台坦克。 当有人再次干扰您神圣伟大的学习时，您可以转动炮塔将其瞄准，并发射一枚炮射线弹予以警告。 这是一种内含大量金属弹丸的炮弹，能对教室内的步兵造成极其恐怖的杀伤。 若对方无视你的警告，则可以装填一枚脱壳稳定翼穿甲弹并对其炮击。 这是一种以钨合金为主要传身材料的弹药，在发射后弹托由于阻力分离，弹体继续向前运动，其尾部分布的十字形尾翼将提供稳定性。 当钨芯穿甲弹击中目标时，由于其密度和硬度都较高，因此它的穿身能力将会非常理想。 得益于现代工业的进步，这发小子弹的速度将接近1800米每秒，约合五倍音速。 如果担心开炮时过大的噪音会打扰到其他同学的学习，也可以对其匀速反复碾压。 装有装甲以及传动系统的笔记本电脑的质量来到了56吨，足以使对方感到非常明显的压迫感。 假如对方逃跑也不必担心。 您搭载的燃气齿轮机的最大马力为1500匹左右，能驱动您的电脑轻速跑出约72公里每小时的速度，足以追上您的挚友。 同时您的笔记本电脑也将会是全校园速度最快的电脑之一。</p>
+                    <p>注意事项：</p>
+                    <ul>
+                        <li>可能违反校规？</li>
+                    </ul>
+                        <p class="news-date">发布时间：2024-09-06</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="news2-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>淄博齐盛高级中学课代表腐败问题集中整治</h2>
+                <div class="modal-text">
+                    <p>近期查处问题：</p>
+                    <ul>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                    </ul>
+                    <p>整治措施：</p>
+                    <ul>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                    </ul>
+                    <p class="news-date">发布时间：2024-06-14</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="news3-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>广告位招租</h2>
+                <div class="modal-text">
+                    <p>广告位招租</p>
+                    <ul>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                    </ul>
+                    <p>广告位招租</p>
+                    <ul>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                    </ul>
+                    <p class="news-date">发布时间：2024-10-21</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="news4-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>【干货】如何在宿舍自制核电站以应对突如其来的停电？</h2>
+                <div class="modal-text">
+                    <p>您是否试想过在宿舍自制一组核反应堆？</p>
+                    <ul>
+                        <li>随着校园军被禁赛的逐渐白热化，越来越多的高年级同学表示已经无力负担高昂的电费。 由于校内局部区域的持续动荡，石油、天然气、煤炭等校内必需品的价格也逐月攀升，校内的电力供应已经不能满足各寝室内例如浓缩油离型机生产线的电力消耗，绝大多数寝室之间也常常因为争夺电力资源而爆发小规模的武装冲突。 一些已经掌握核打击能力的宿舍，已经不甘于通过饱和式核打击与发动特级军事行动的方式和平解决。 显然，这是由于人民日益增长的美好生活需要和不平等不充分的发展所带来的可预见的矛盾。 那么，该如何解决这个问题呢？ 有了在宿舍自制一组清水堆核电站或许是个不错的主意。 由于隔壁宿舍贪图便宜而购买的二手废水堆反应装置，常常出现例如放射性物质泄露的小插曲，这无疑会对寝室内的绿化植物造成难以挽回的伤害。</li>
+                        <li>初级宿舍用核电站看起来像是一个标准火力发电站的构型，所不同的是，火电站的热源常常来自于锅炉，而核电站的热源则来自反应堆。 所以请委托上次为您提供铀矿石的中介，以1到3折的合理折扣购入一小块约3000吨，风度在0.5%左右的粗制铀矿，并利用顺丰次热达送至您学校附近的菜鸟驿站指挥宿舍的核安全副部长驾驶上铺设有的6乘6半挂牵引卡车取货。 那么针对于这一部分感兴趣但缺少合法渠道的同学，请翻看我。 2024年4月28日的民用核武器入门指南。 将这些釉矿石利用碎石机、擀面杖或者汤匙碾碎成细小的粉末，在此过程中请佩戴口罩，以防止吸入粉尘导致上呼吸道感染。 然后等待夜幕降临，趁着夜色的掩护潜入学校的化学实验室，以常人难以发现的方式悄无声息的带走。 少量氢氟酸试剂，约1.5到2万吨即可。 值得注意的是，氢氟酸有着较强的腐蚀性，能够轻易腐蚀金属、玻璃以及带有气压功能的加明手表，所以您需要使用塑料瓶将它妥善的封装保存。 请注意，以上物品有着安全程度高、理化毒性强、挥发速度快的特性，所以请不要与例如可口可乐、智能加温马桶等食品混合存放，以规避少量不可预见的风险。 在去年的课程中，我们详细讲述了20亿踢角与民用核聚变的手工艺品制作。 想必利用油矿与氢氟酸制作我们随处可见的重硫酸盐。 对于身处常规私人寝室的您而言，是易如反掌的。 重复之前的步骤即可得到铀的氧化物，也就是我们随处可见的黄笔。 值得注意的是，此时手工艺品中的铀235仅仅只有不到1%，剩余的均为铀238及铀234。 显然，这是令人非常不满的，连乞丐都不屑一顾。</li>
+                        <li>我们可以利用离心机将风度进一步提纯至3%左右。 家庭条件优渥或者急需用电的同学，可以直接从俄罗斯购入商业级浓缩油。 如果您上次用1万台洗衣机制作的浓缩油离心机性能良好，可以继续使用。 苦恼于没有离心机的同学，可以去甘肃的304雪糕厂临时租赁一台奶油离心机，不要担心他们转奶油的机子以前就是赚核原料的。 值得注意的是，在此过程中的耗电量会稍高，约为70亿度电左右，为了防止宿舍跳闸，您可以冒着少量的风险将电路篡改并连接着校长办公室或者校内的工业电网。 我想为了能够成功完成毕业设计，这个风险是值得的。 将提纯后的氧化油利用专业的模具或以手工捏造的方式塑形为长宽均为1厘米的小颗粒，再利用高温高压釜烧结成二氧化油陶瓷锌块。 没有高温斧的同学可以购入质量较高的高压锅。 值得注意的是，在此过程中，您可能会遭受少量常人难以察觉的辐射，建议您穿着相对专业的防辐射服，买不到的同学可以使用质量较高的一次性雨衣，以提供强大的心理安慰。 从100 688上以极低的价格定制一批质量较高的锆合金空心小管，以作为燃料块的外壳，将二氧化硫锌块均匀且稳定的塞入锆合金外管，即可得到标准的燃料棒。 您可以根据宿舍的面积或者预估的发电规模来灵活制作核燃料棒的数量，以达到节省经费与节能减排、保护环境的目的。 到了这一步，反应堆的核心部件燃料棒就算是大功告成了，也将意味着我们可以开始建造电站的核心部分核导。 为了降低学生们的经济压力，我们这次选用清水压水堆的构型来制作手工核反应堆。 首先从某黄色软件购入约5000到7000吨，属于秒杀价的娃哈哈饮用水，并选择次日达送至提货点作为反应堆的漫画剂及冷却剂，再从寝室楼下的防御工式中悄悄拿走两台五十铃特种高压油罐运输卡车，并装入口袋，以规避被别人发现的风险。 我们这次主要利用高压罐体作为堆芯外壳以及蒸汽发生器的外壳，联系校外的五金师傅切割并焊接至合理结构。 记得事后不要忘记给对方一包南京雨花石作为感谢。 为了控制输出功率以及防止发生意外，您可以在学校后山开采适量的棚，用于吸收过多的种子。 在此过程中，您可以逼迫低年级同学自愿帮您制作棚控制棒。 您可以向同校与您关系密切的电气工程专业学生手中以相对合法的方式租借或购买循环泵及蒸汽轮机，同时趁他不注意，悄悄拿走一台随处可见的大型工业发电机，以作为最后的电力输出模块，也就是我们随处可见的常规岛。 将手工古法反应堆利用3M布机胶布牢固的安装在外壳内，并电底足够多的鼓，合理连接核导与常规导即可准备开始。 作还记得上次自制核武器是从楼下便利店购买的泼皮中子园吗？ 聪明的你一定知道，这就是中子点火扳机。 当泼皮结合后，会释放大量的中子作为链式反应的起点。 理论上来讲，在核裂变发生时，当一个中子撞击鼬235，右核就会分裂成贝核克，产生1至3个中子并释放能量。 新的中子继续与右2353匹啊不撞击，于此往复循环产生大量的能量。 期间您可以通过上下移动控制棒来吸收中子一控制反应堆的输出功率产生的这些能量，以热能的方式加热载体就是水。 由于压水堆的堆内有着令常人难以忍受的高压环境，所以水将处于330度以上但不沸腾的超临界状态。 此时热量通过封闭管路进入工作介质，也就是我们的第二个高压罐体，这个里面的水才是用于蒸发的。 值得注意的是，堆芯内的水有着强放射性，所以堆芯回路需要作为一个完整且封闭的回路，其中冷却后的水会随着主循环泵继续回到堆内循环使用，这便组成了我们的第一回路。 您可以简单的理解成直接加热与水域加热的区别。 值得注意的是，在此过程中可能会产生损伤您机体表层皮肤的高温高压蒸汽，请勿用手直接触碰或者利用高温蒸汽熏烤食物。 工作载体蒸发形成的高温高压蒸汽将推动蒸汽轮机带动发电机发电。 为了防止水位烧干造成堆芯绒会引发核泄漏而危及邻里关系，您可以将反应堆用质量较高的软管连接至宿舍水龙头上，作为全域冷循环装置。 相信经过以上的学习，您已经能够从容的在寝室以相对合理的方式参与军备竞赛，从此再也不惧怕任何停电的风险。 同时您剩余的余电还可以并入国家电网，从而换取适量的报酬，以减轻您的经济压力。 </li>
+                    </ul>
+                    <p class="news-date">发布时间：2024-05-24</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="news5-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>在校内武装夺取政权</h2>
+                <div class="modal-text">
+                    <p>时间线：</p>
+                    <ol>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                        <li>我懒得写</li>
+                    </ul>
+                    <p class="news-date">发布时间：2024-03-31</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新闻和通知公告部分 -->
+    <section class="news">
+        <div class="container">
             <div class="news-tabs">
                 <div class="tab active">学校新闻</div>
                 <div class="tab">通知公告</div>
         </div>
             <div class="news-content">
-                <article class="news-list news" style="display: block;">
+                <ul class="news-list">
                     <li>
-                        <a href="#" class="news-link" data-modal="news6">淄博实验中学2025年高中招生简章</a>
-                        <span class="date">01-06</span>
+                        <a href="#" class="news-link" data-modal="news1">【干货】如何在校内造一辆坦克以应对核废土</a>
+                        <span class="date">09-06</span>
                     </li>
                     <li>
-                        <a href="#" class="news-link" data-modal="news1">淄博齐盛高级中学2023级新生入学仪式圆满举行</a>
-                        <span class="date">09-01</span>
+                        <a href="#" class="news-link" data-modal="news2">淄博齐盛高级中学课代表腐败问题集中整治</a>
+                        <span class="date">06-14</span>
                     </li>
                     <li>
-                        <a href="#" class="news-link" data-modal="news2">我校与淄博实验中学联合举办教师教学研讨会</a>
-                        <span class="date">06-15</span>
+                        <a href="#" class="news-link" data-modal="news3">广告位招租</a>
+                        <span class="date">10-21</span>
                     </li>
                     <li>
-                        <a href="#" class="news-link" data-modal="news3">淄博齐盛高级中学首届校园文化艺术节成功举办</a>
-                        <span class="date">04-22</span>
+                        <a href="#" class="news-link" data-modal="news4">【干货】如何在宿舍自制核电站以应对突如其来的停电？</a>
+                        <span class="date">05-24</span>
                     </li>
                     <li>
-                        <a href="#" class="news-link" data-modal="news4">集团化办学促进教育质量提升研讨会在我校举行</a>
-                        <span class="date">03-18</span>
+                        <a href="#" class="news-link" data-modal="news5">[干货]如何在校内武装夺取政权</a>
+                        <span class="date">03-31</span>
                     </li>
-                    <li>
-                        <a href="#" class="news-link" data-modal="news5">我校开展"强化师德师风建设"专题活动</a>
-                        <span class="date">03-05</span>
-                    </li>
-                </article>
-                
-                <!-- 通知公告列表 -->
-                <article class="news-list notices" style="display: none;">
-                    <li>
-                        <a href="#" class="news-link" data-modal="notice6">关于2025年高中招生简章发布的通知</a>
-                        <span class="date">01-06</span>
-                    </li>
-                    <li>
-                        <a href="#" class="news-link" data-modal="notice1">关于2024年暑假放假安排的通知</a>
-                        <span class="date">06-30</span>
-                    </li>
-                    <li>
-                        <a href="#" class="news-link" data-modal="notice2">关于举办第二届校园科技创新大赛的通知</a>
-                        <span class="date">06-20</span>
-                    </li>
-                    <li>
-                        <a href="#" class="news-link" data-modal="notice3">关于组织学生参加省级物理竞赛的通知</a>
-                        <span class="date">06-10</span>
-                    </li>
-                    <li>
-                        <a href="#" class="news-link" data-modal="notice4">2024年高考志愿填报指导会通知</a>
-                        <span class="date">06-05</span>
-                    </li>
-                    <li>
-                        <a href="#" class="news-link" data-modal="notice5">关于开展校园安全检查的通知</a>
-                        <span class="date">05-20</span>
-                    </li>
-                    </article>
-                
-                <!-- 可以添加"更多"链接 -->
-                <div class="more-link">
-                    <a href="#" data-modal="news">更多 >></a>
-                </div>
-            </div>
-        </div>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- VR全景部分 -->
+    <!-- 班徽和VR全景部分 -->
     <section class="feature-section">
         <div class="container">
             <div class="feature-grid">
+                <div class="class-badge">
+                    <img src="./static/image/班级.jpg" alt="高一六班班徽">
+                    <h1>高一六班</h1>
+                    <p> 2024级6班</p>
+                    </div>
                 <div class="vr-container">
-                    <h2 class="section-title">校园VR全景</h2>
-                    <div class="vr-wrapper">
-                        <iframe
-                            src="https://www.720yun.com/t/3cvkzhrmg2m?scene_id=86008984"
-                            width="100%"
-                            height="500px"
-                            allowfullscreen
-                            loading="lazy"
-                            style="border-radius: 15px;"
-                            sandbox="allow-scripts allow-same-origin"
-                            referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 学校特色部分 -->
-    <section class="features" id="features">
-        <div class="container">
-            <h2 class="section-title">学校特色</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">🏫</div>
-                    <h3>集团化办学</h3>
-                    <p>与淄博实验中学实施紧密型集团化办学模式，共享优质教育资源</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">👨‍🏫</div>
-                    <h3>优质师资</h3>
-                    <p>由淄博实验中学选派骨干和全市公开招聘的高水平教师团队</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">📚</div>
-                    <h3>同步教学</h3>
-                    <p>与淄博实验中学同步教研、共同备课、同步检测、同步阅卷</p>
-                    </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🔄</div>
-                    <h3>双轨培养</h3>
-                    <p>实现高考与名校强基计划冲刺的双轨并行培养模式</p>
+                    <h2>校园VR全景</h2>
+                    <iframe
+                        src="https://www.720yun.com/t/3cvkzhrmg2m?scene_id=86008984"
+                        width="100%"
+                        height="500px"
+                        allowfullscreen
+                        loading="lazy"
+                        style="border-radius: 15px;"
+                        sandbox="allow-scripts allow-same-origin"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
                                     </div>
             </div>
         </div>
     </section>
 
     <!-- 校园风光部分 -->
-    <section class="campus-gallery" id="campus">
+    <section class="campus">
         <div class="container">
-            <h2 class="section-title">校园风光</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.2w8YkvERu-is-bMa2WKH3AHaEL?rs=1&pid=ImgDetMain" alt="教学楼">
-                    <div class="gallery-caption">学校风光</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://ts1.cn.mm.bing.net/th/id/R-C.5c4c364d41381af34faede156839c55f?rik=Mi%2bf06Uq1yao5w&riu=http%3a%2f%2fwww.bangboer.com%2ffile%2fupload%2f202304%2f10%2f140954452950.png&ehk=d49OB84%2fniQdKziGYeDOTHRa3elfA68JQy2ijY7qeFQ%3d&risl=&pid=ImgRaw&r=0" alt="实验室">
-                    <div class="gallery-caption">学校风光</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="http://edu.zibo.gov.cn/picture/0/45580fe1fc7c407086c2fad40d7425ba.jpg" alt="图书馆">
-                    <div class="gallery-caption">学校风光</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.e66WovIRaohs5o0IHUchowHaE7?rs=1&pid=ImgDetMain" alt="操场">
-                    <div class="gallery-caption">学校风光</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="http://edu.zibo.gov.cn/picture/0/s_adf68d3137f840e38a4ff45ac038df83.jpg" alt="食堂">
-                    <div class="gallery-caption">学校风光</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="http://edu.zibo.gov.cn/picture/0/49ca414a862144aea5161f22ac026027.jpg" alt="宿舍">
-                    <div class="gallery-caption">学校风光</div>
-                </div>
+            <h2>校园风光</h2>
+            <div class="campus-photos">
+                <div class="photo">
+                    <img src="https://n.sinaimg.cn/sinakd20210805s/560/w680h680/20210805/5892-f01571f536d9489997e3355f3238ee87.jpg" alt="体育馆">
+                    <p>体育馆</p>
             </div>
+                <div class="photo">
+                    <img src="https://img.keaitupian.cn/newupload/01/1675065263360142.jpg" alt="教学楼">
+                    <p>教学楼</p>
         </div>
-    </section>
-
-    <!-- 招生信息部分 -->
-    <section class="admission" id="admission">
-        <div class="container">
-            <h2>招生信息</h2>
-            <div class="admission-content">
-                <div class="admission-info">
-                    <h3>2024年招生计划</h3>
-                    <p>根据《淄博市2024年中考招生工作意见》，淄博齐盛高中计划招生800人。其中，指标生560人，非指标生240人。</p>
-                    <h3>招生咨询方式</h3>
-                    <ul>
-                        <li><strong>现场咨询:</strong> 7月1日至4日 8:00—17:00，地点：淄博齐盛高中体育馆</li>
-                        <li><strong>电话咨询:</strong> 0533-3189080，0533-3180577，0533-3180566</li>
-                        <li><strong>咨询时间:</strong> 7月1日至5日 8:00—11:30；15:00—17:00</li>
-                    </ul>
-                    <h3>校园开放日</h3>
-                    <p>为更好地让广大考生及家长了解淄博齐盛高中，学校于7月1日至2日8:00—17:00对广大考生及家长开放，请由淄博齐盛高中南门进校参观。</p>
+                <div class="photo">
+                    <img src="https://ts1.cn.mm.bing.net/th/id/R-C.12e0dab8e33176ce9154ac49a12f09e0?rik=4qpp53MdGJNh%2bQ&riu=http%3a%2f%2fwx4.sinaimg.cn%2fbmiddle%2fceeb653ely1ge9sdizjmwg20dc0dc3z3.gif&ehk=U3zU75IzOrHdInKlN4%2fCBcuXXVYWUhI0eVtBisAtp6Q%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="食堂">
+                    <p>食堂</p>
                 </div>
-                <div class="admission-contact">
-                    <h3>联系方式</h3>
-                    <p>招生热线：0533-XXXXXXX</p>
-                    <p>邮箱：zhaosheng@zbqsschool.edu.cn</p>
-                    <p>学校地址：鲁泰大道以北，天津路以东</p>
-                    <button class="admission-btn">立即报名</button>
+                <div class="photo">
+                    <img src="https://img.alicdn.com/bao/uploaded/i3/2207939377556/O1CN01WYdnQa25ghS29i9BV_!!2207939377556.jpg" alt="宿舍楼">
+                    <p>宿舍楼</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 页脚 -->
-    <footer id="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>关于我们</h3>
-                    <p>淄博齐盛高级中学创建于2020年（前身为新区高中），是一所由淄博实验中学领办的现代化、高品质的集团化高级中学。学校坚持"育人为本，全面发展"的教育理念。</p>
-                </div>
-                <div class="footer-contact">
-                    <h3>联系我们</h3>
-                    <p>地址：山东省淄博市鲁泰大道以北，天津路以东</p>
-                    <p>电话：0533-3189080</p>
-                    <p>邮箱：info@zbqsschool.edu.cn</p>
-                </div>
             <div class="links">
                 <h3>友情链接</h3>
                 <ul>
-                    <li><a href="https://www.moe.gov.cn/" rel="noopener">教育部</a></li>
-                    <li><a href="https://edu.zibo.gov.cn/" rel="noopener">淄博市教育局</a></li>
-                    <li><a href="http://www.zbsyzx.net/" rel="noopener">淄博实验中学</a></li>
+                    <li><a href="https://www.moe.gov.cn/">教育部</a></li>
+                    <li><a href="https://edu.zibo.gov.cn/">淄博市教育局</a></li>
+                    <li><a href="https://xn--6-ti2c86fw58d.rth1.xyz/">齐盛六班</a></li>
                     <li><a href="#">在这里签个名字不会被发现吧——THW</a></li>
                 </ul>
-                </div>
-            </div>
-            
-            <!-- 添加法律声明部分 -->
-            <div class="legal-disclaimer">
-                <h3>法律声明</h3>
-                <div class="disclaimer-content">
-                    <p><strong>免责声明：</strong></p>
-                    <ol>
-                        <li>本网站是由第三方个人维护的齐盛高中非官方网站，仅供参考。网站内容均来源于公开信息。</li>
-                        <li>本网站不对信息的准确性、完整性、及时性和可靠性做出任何承诺或保证。</li>
-                        <li>用户在使用本网站信息时需自行判断，并承担因使用这些信息而产生的所有风险和责任。</li>
-                        <li>本网站与淄博齐盛高级中学官方无关，不代表学校的官方立场或观点。</li>
-                    </ol>
-                    <p><strong>版权声明：</strong></p>
-                    <ol>
-                        <li>本网站的所有原创内容受中华人民共和国著作权法保护。</li>
-                        <li>未经许可，任何单位或个人不得复制、修改、传播或用于商业用途。</li>
-                        <li>本网站引用的图片、文字等内容的版权归原作者所有。如有侵权，请联系我们删除。</li>
-                    </ol>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>© 2025 THW 版权所有 | <a href="#">Github Page</a> | <a href="#" class="disclaimer-link">法律声明</a></p>
-            </div>
         </div>
+    </div>
     </footer>
 
-    <!-- 添加全局模态框容器 -->
-    <div class="modal-container"></div>
-
-    <!-- 添加新闻弹窗模板 -->
-    <div class="modal" id="news1-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>淄博齐盛高级中学2023级新生入学仪式圆满举行</h2>
-            <div class="modal-text">
-                <p>9月1日上午，淄博齐盛高级中学2023级新生入学仪式在学校体育馆隆重举行。校长、党委书记和各位领导出席了本次活动，为新生们带来了殷切的期望与嘱托。</p>
-                <p>校长在讲话中提到，淄博齐盛高级中学作为淄博实验中学集团化办学的重要成员校，将秉承"严格要求，全面发展"的教育理念，为每一位学生提供优质的教育资源和成长环境。希望同学们在未来三年的高中生活中，志存高远，脚踏实地，不负韶华，砥砺前行。</p>
-                <p>仪式上，学生代表发言表达了对高中生活的憧憬和对未来的展望，承诺将以优良的学风和严谨的态度投入到学习中，不辜负学校和家长的期望。</p>
-                <p>据悉，淄博齐盛高级中学2023级共招收新生800人，其中指标生560人，非指标生240人。学校将延续淄博实验中学的优良传统，同步开展教育教学活动，进一步提升教育教学质量。</p>
-                <div class="news-date">发布时间：2023-09-01</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 新闻2弹窗 -->
-    <div class="modal" id="news2-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>我校与淄博实验中学联合举办教师教学研讨会</h2>
-            <div class="modal-text">
-                <p>6月15日至16日，我校与淄博实验中学联合举办了为期两天的教学研讨会。本次研讨会围绕"集团化办学背景下的教学质量提升"这一主题，开展了一系列教研活动。</p>
-                <p>研讨会邀请了省级教育专家作专题报告，并组织了学科组教师进行集体备课、观摩课和教学研讨。通过此次活动，进一步加强了两校教师的交流与合作，推动了教学理念的更新与教学方法的创新。</p>
-                <p>参与研讨会的教师纷纷表示，此次活动受益匪浅，不仅学习了先进的教学理念和方法，更加深了对集团化办学优势的认识，为今后的教学工作提供了新的思路和方向。</p>
-                <div class="news-date">发布时间：2023-06-15</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 新闻3弹窗 -->
-    <div class="modal" id="news3-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>淄博齐盛高级中学首届校园文化艺术节成功举办</h2>
-            <div class="modal-text">
-                <p>4月22日，我校成功举办了首届校园文化艺术节，活动以"青春飞扬，艺术启航"为主题，展示了学生在音乐、舞蹈、美术等方面的才艺。</p>
-                <p>本次活动由学生会主办，共设置了10个展位和3个舞台表演区域。来自各年级的学生积极参与，以丰富多彩的形式展示了自己的艺术才华。活动现场还邀请了淄博实验中学的师生前来观摩交流。</p>
-                <p>校长在致辞中表示，艺术教育是素质教育的重要组成部分，希望通过这样的活动，培养学生的艺术修养，丰富校园文化生活，促进学生全面发展。</p>
-                <div class="news-date">发布时间：2023-04-22</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 新闻4弹窗 -->
-    <div class="modal" id="news4-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>集团化办学促进教育质量提升研讨会在我校举行</h2>
-            <div class="modal-text">
-                <p>3月18日，"集团化办学促进教育质量提升"研讨会在我校举行。来自全市各高中学校的校长、教学副校长以及教研室负责人参加了此次研讨会。</p>
-                <p>会上，与会人员就如何通过集团化办学模式提升教育教学质量进行了深入探讨。我校作为淄博实验中学集团化办学的成功案例，分享了在教学管理、师资共享、教研联动等方面的经验做法。</p>
-                <p>市教育局领导充分肯定了我校集团化办学取得的成效，并表示将进一步推广这一模式，促进全市优质教育资源均衡发展。</p>
-                <div class="news-date">发布时间：2023-03-18</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 新闻5弹窗 -->
-    <div class="modal" id="news5-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>我校开展"强化师德师风建设"专题活动</h2>
-            <div class="modal-text">
-                <p>3月5日，我校开展了以"强化师德师风建设，争做'四有'好老师"为主题的专题教育活动。</p>
-                <p>活动中，全体教师重温了《中小学教师职业道德规范》，并结合实际工作，分组研讨如何更好地践行师德规范。学校还邀请了市教育局师德建设工作组专家作了题为《师德师风建设与教育质量提升》的专题讲座。</p>
-                <p>活动结束后，全体教师签署了师德承诺书，承诺以德立身、以德立学、以德施教，做学生健康成长的引路人。</p>
-                <div class="news-date">发布时间：2023-03-05</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 添加最新新闻的模态框 -->
-    <div class="modal" id="news6-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>淄博实验中学2025年高中招生简章</h2>
-            <div class="modal-text">
-                <p>淄博实验中学创建于1948年，是淄博市教育局直属的重点高中，山东省规范化高中，山东省示范性高中，山东省文明校园，山东省高品质高中建设学校。学校拥有悠久的办学历史和优良的传统，培养了数以万计的各级各类优秀人才，先后获得"全国模范学校"、"全国教育系统先进集体"、"全国育人标兵"等荣誉称号。</p>
-                
-                <h3>一、招生计划</h3>
-                <p>2025年淄博实验中学面向全市招收高一新生700人，其中分配生500人，择校生200人。</p>
-                
-                <h3>二、报名条件</h3>
-                <p>1. 分配生：应届初中毕业生，中考成绩达到我校分配生录取分数线。</p>
-                <p>2. 择校生：应届初中毕业生，中考成绩达到我校择校生录取分数线。</p>
-                
-                <h3>三、报名方式</h3>
-                <p>1. 网上报名：考生可在淄博市教育局指定的网站进行网上报名。</p>
-                <p>2. 现场报名：考生可持本人身份证、中考准考证及成绩单到学校招生办公室报名。</p>
-                
-                <h3>四、录取原则</h3>
-                <p>1. 分配生：根据市教育局公布的分配生计划，按中考成绩从高到低录取。</p>
-                <p>2. 择校生：按中考成绩从高到低录取。</p>
-                
-                <h3>五、收费标准</h3>
-                <p>严格按照市物价局、市财政局、市教育局核定的收费标准执行。</p>
-                
-                <h3>六、联系方式</h3>
-                <p>咨询电话：0533-2865508、2865509</p>
-                <p>学校地址：淄博市张店区柳泉路108号</p>
-                <p>学校网址：www.zbsyzx.cn</p>
-                
-                <div class="news-date">发布时间：2025-01-06</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 添加通知公告弹窗模板 -->
-    <!-- 通知1弹窗 -->
-    <div class="modal" id="notice1-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>关于2024年暑假放假安排的通知</h2>
-            <div class="modal-text">
-                <p>根据上级教育部门安排，结合我校实际情况，现将2024年暑假放假安排通知如下：</p>
-                <p>1. 放假时间：2024年7月15日至8月31日，共计48天。</p>
-                <p>2. 开学时间：2024年9月1日（星期日）报到，9月2日（星期一）正式上课。</p>
-                <p>3. 暑期安排：</p>
-                <p>   - 高三年级学生：7月15日至7月25日参加指导性自习。</p>
-                <p>   - 高二年级学生：8月25日至8月31日返校参加开学准备。</p>
-                <p>   - 高一新生：8月28日至8月31日参加入学教育。</p>
-                <p>请各位同学在假期注意安全，合理安排学习与休息时间，按时完成暑假作业。</p>
-                <div class="news-date">发布时间：2024-06-30</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 通知2弹窗 -->
-    <div class="modal" id="notice2-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>关于举办第二届校园科技创新大赛的通知</h2>
-            <div class="modal-text">
-                <p>为激发学生科技创新热情，培养学生创新精神和实践能力，学校决定举办第二届校园科技创新大赛，现将有关事项通知如下：</p>
-                <p>一、参赛对象：全校学生</p>
-                <p>二、比赛时间：2024年7月1日至7月10日</p>
-                <p>三、作品类别：科学实验、发明创造、科技论文、科技制作等</p>
-                <p>四、报名方式：即日起至6月25日，各班将参赛学生名单报送教务处</p>
-                <p>希望同学们积极参与，展示创新才能！</p>
-                <div class="news-date">发布时间：2024-06-20</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 通知3弹窗 -->
-    <div class="modal" id="notice3-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>关于组织学生参加省级物理竞赛的通知</h2>
-            <div class="modal-text">
-                <p>根据省级物理竞赛组委会通知，我校将组织学生参加省级物理竞赛。现将有关事项通知如下：</p>
-                <p>一、参赛对象：全校学生</p>
-                <p>二、比赛时间：2024年7月15日至7月20日</p>
-                <p>三、比赛地点：淄博市体育中心</p>
-                <p>四、报名方式：即日起至6月25日，各班将参赛学生名单报送教务处</p>
-                <p>请同学们积极准备，争取在比赛中取得好成绩！</p>
-                <div class="news-date">发布时间：2024-06-10</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 通知4弹窗 -->
-    <div class="modal" id="notice4-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>2024年高考志愿填报指导会通知</h2>
-            <div class="modal-text">
-                <p>为了帮助同学们更好地了解高考志愿填报的相关政策和流程，学校将于6月25日下午2:00在体育馆举办高考志愿填报指导会。</p>
-                <p>届时，将邀请市教育局高考志愿填报指导专家作专题讲座，并提供一对一的咨询服务。请同学们提前准备好相关材料，准时参加。</p>
-                <div class="news-date">发布时间：2024-06-05</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 通知5弹窗 -->
-    <div class="modal" id="notice5-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>关于开展校园安全检查的通知</h2>
-            <div class="modal-text">
-                <p>为了确保校园安全，学校将于6月15日至6月20日开展校园安全检查。检查范围包括教学楼、实验室、图书馆、食堂、宿舍等场所。</p>
-                <p>请各部门、各班级做好自查自纠工作，确保校园安全。对于检查中发现的问题，学校将及时整改，确保师生安全。</p>
-                <div class="news-date">发布时间：2024-05-20</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 添加最新通知的模态框 -->
-    <div class="modal" id="notice6-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>关于2025年高中招生简章发布的通知</h2>
-            <div class="modal-text">
-                <p>各位初四学生及家长：</p>
-                <p>我校2025年高中招生简章已正式发布，详情可在学校官网查询。主要内容包括：</p>
-                <ol>
-                    <li>2025年面向全市招收高一新生700人，分配生500人，择校生200人</li>
-                    <li>报名条件及方式</li>
-                    <li>录取原则</li>
-                    <li>收费标准</li>
-                    <li>联系方式等</li>
-                </ol>
-                <p>欢迎广大初四学生报考我校！</p>
-                <p>招生咨询电话：0533-2865508、2865509</p>
-                <div class="news-date">发布时间：2025-01-06</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 在 body 结束标签前加载 JS -->
     <script>
-    (function($) {
-        'use strict';
-        
-        // 等待DOM完全加载
-        $(function() {
-            console.log('DOM ready');
-            
-            // 新闻标签切换
-            $('.news-tabs').on('click', '.tab', function() {
-                var $this = $(this);
-                $this.addClass('active').siblings().removeClass('active');
-                
-                if ($this.index() === 0) {
-                    $('.news-list.notices').hide();
-                    $('.news-list.news').show();
-                } else {
-                    $('.news-list.news').hide();
-                    $('.news-list.notices').show();
-                }
-            });
-
-            // 模态框处理
-            $(document).on('click', '.news-link, .read-more', function(e) {
+        $(document).ready(function() {
+            // 点击导航链接显示对应弹窗
+            $('.nav-link, .news-link').click(function(e) {
                 e.preventDefault();
-                var modalId = $(this).data('modal');
-                if (modalId) {
-                    $('#' + modalId + '-modal').fadeIn(300);
-                    $('.modal-container').fadeIn(300);
-                    $('body').addClass('modal-open');
+                const modalType = $(this).data('modal');
+                if (modalType) {
+                    showModal(modalType);
                 }
             });
 
             // 关闭弹窗
-            $(document).on('click', '.close-btn', function() {
-                $('.modal, .modal-container').fadeOut(300);
-                $('body').removeClass('modal-open');
+            $('.close-btn').click(function() {
+                hideModal();
             });
 
-            // 滚动处理
-            function handleScroll() {
-                var scrollTop = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                
-                $('.section-fade').each(function() {
-                    var $element = $(this);
-                    var elementTop = $element.offset().top;
-                    
-                    if (elementTop < (scrollTop + windowHeight)) {
-                        $element.addClass('active');
-                    }
-                });
+            // 点击弹窗外部关闭弹窗
+            $('.modal-container').click(function(e) {
+                if ($(e.target).hasClass('modal-container')) {
+                    hideModal();
+                }
+            });
+
+            // ESC键关闭弹窗
+            $(document).keydown(function(e) {
+                if (e.keyCode === 27) {
+                    hideModal();
+                }
+            });
+
+            // 显示弹窗函数
+            function showModal(type) {
+                $('.modal-container').fadeIn(300);
+                $(`#${type}-modal`).fadeIn(300);
+                $('body').addClass('modal-open');
             }
 
-            // 初始化动画类
-            $('.features, .campus-gallery, .admission, #footer').addClass('section-fade');
-            
-            // 绑定滚动事件
-            $(window).on('scroll', handleScroll);
-            
-            // 初始检查
-            handleScroll();
-            
-            // 防止冲突的代码
-            window.addEventListener('error', function(e) {
-                console.warn('Caught error:', e.error);
-                return false;
-            }, true);
+            // 隐藏弹窗函数
+            function hideModal() {
+                $('.modal-container').fadeOut(300);
+                $('.modal').fadeOut(300);
+                $('body').removeClass('modal-open');
+            }
+
+            // 新闻标签切换
+            $('.tab').click(function() {
+                $('.tab').removeClass('active');
+                $(this).addClass('active');
+                
+                // 可以在这里添加切换新闻列表的逻辑
+                const tabType = $(this).index();
+                if (tabType === 0) {
+                    // 显示新闻列表
+                    $('.news-list').show();
+                } else {
+                    // 显示通知公告列表
+                    // $('.notice-list').show();
+                }
+            });
         });
-    })(jQuery);
     </script>
 </body>
 </html>
