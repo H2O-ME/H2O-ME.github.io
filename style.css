@@ -1,0 +1,312 @@
+/* 修改 header 样式 */
+header {
+    background: url(../static/Screenshot_2024-10-26-17-55-10-131_com.tencent.mobileqq-edit.jpg);
+    background-size: cover;
+    height: 165px;
+}
+
+/* 修改轮播图样式 */
+.slides_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 修改校园风光样式 */
+.picMarquee-left .pic img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+}
+
+/* 添加移动端适配 */
+@media screen and (max-width: 768px) {
+    header {
+        height: 100px;
+    }
+    
+    .slides_container {
+        height: 200px;
+    }
+    
+    .picMarquee-left {
+        display: none;
+    }
+}
+
+/* 添加模态框动画效果 */
+.modal {
+  transition: all 0.3s ease-in-out;
+}
+
+/* 优化移动端适配 */
+@media screen and (max-width: 768px) {
+  .news-content {
+    padding: 10px;
+  }
+  
+  .feature-grid {
+    flex-direction: column;
+  }
+}
+
+/* 新闻列表样式 */
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-list li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.news-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.news-list a:hover {
+    color: #007bff;
+}
+
+/* 模态框内容样式 */
+.modal-text {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.modal-text ul {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.news-date {
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* 特色模块样式 */
+.feature-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.feature-item h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 20px;
+}
+
+.feature-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 导航栏样式优化 */
+.main-nav {
+    background: #f8f9fa;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    background: #e9ecef;
+    color: #007bff;
+}
+
+/* 学校特色板块样式优化 */
+.school-features {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #007bff;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #00d2ff);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 25px;
+    display: inline-block;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 15px;
+}
+
+.feature-card h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #6c757d;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.features-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.stat-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.stat-item h4 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.stat-number {
+    font-size: 42px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #007bff, #00d2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+/* 移动端适配优化 */
+@media screen and (max-width: 768px) {
+    .school-features {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .feature-card {
+        padding: 30px 20px;
+    }
+    
+    .feature-icon {
+        font-size: 36px;
+    }
+    
+    .feature-card h3 {
+        font-size: 20px;
+    }
+    
+    .stat-number {
+        font-size: 32px;
+    }
+    
+    .features-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 移动端适配优化 */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        min-width: auto;
+        padding: 0 15px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .search {
+        position: relative;
+        transform: none;
+        width: 100%;
+        right: 0;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+} 
