@@ -22,11 +22,11 @@
     <meta http-equiv="content-language" content="zh-CN">
     
     <!-- SEO优化 -->
-    <meta name="description" content="淄博齐盛高级中学创建于2020年，位于鲁泰大道以北，天津路以东，占地132亩。作为淄博实验中学核心校集团成员，实施紧密型集团化办学模式，拥有150余名优秀教师团队，致力于培养德智体美劳全面发展的优秀人才。">
+    <meta name="description" content="淄博齐盛高级中学创建于2020年，位于鲁泰大道以北，天津路以东，占地132亩。作为淄博实验中学核心校集团成员，实施紧密型集团化办学模式，拥有149名教职工（其中研究生学历104人），致力于培养德智体美劳全面发展的优秀人才。">
     <meta name="keywords" content="淄博齐盛高级中学,齐盛高中,淄博实验中学,集团化办学,淄博市教育局,淄博高中,淄博高考,淄博教育">
     
     <!-- 标题 -->
-    <title>淄博齐盛高级中学 - 淄博实验中学集团成员校 | 打造全市一流教育品牌</title>
+    <title>淄博齐盛高级中学</title>
     
     <!-- Open Graph标签 -->
     <meta property="og:title" content="淄博齐盛高级中学 - 淄博实验中学集团成员校">
@@ -50,6 +50,20 @@
                 document.body.style.overflow = '';
             }
         }
+    </script>
+
+    <!-- 在<head>部分添加以下代码 -->
+    <script>
+        // 检查是否首次访问
+        function checkFirstVisit() {
+            if (!sessionStorage.getItem('visited')) {
+                sessionStorage.setItem('visited', 'true');
+                window.location.href = 'index.html';
+            }
+        }
+        
+        // 页面加载时检查
+        window.onload = checkFirstVisit;
     </script>
 </head>
 <body>
@@ -78,12 +92,14 @@
         <div class="container">
             <ul>
                 <li><a href="/" class="nav-link">首页</a></li>
-                <li><a href="#" class="nav-link" data-modal="about">关于我们</a></li>
-                <li><a href="#" class="nav-link" data-modal="features">学校特色</a></li>
+                <li><a href="#" class="nav-link" data-modal="intro">关于我们</a></li>
+                <li><a href="#" class="nav-link" data-modal="info">学校概况</a></li>
+                <li><a href="#" class="nav-link" data-modal="leadership">学校领导</a></li>
+                <li><a href="#" class="nav-link" data-modal="teachers">师资队伍</a></li>
+                <li><a href="#" class="nav-link" data-modal="features">办学特色</a></li>
                 <li><a href="#" class="nav-link" data-modal="admission">招生信息</a></li>
-                <li><a href="#" class="nav-link" data-modal="legal">法律声明</a></li>
             </ul>
-    </div>
+        </div>
     </nav>
 
     <!-- 弹出框 -->
@@ -94,8 +110,9 @@
                 <span class="close-btn">&times;</span>
                 <h2>学校简介</h2>
                 <div class="modal-text">
-                    <p>淄博齐盛高级中学与淄博实验中学实施紧密型集团化合作办学，办学两年来，已经探索出了具有淄博经验的创新型合作、紧密型合作、高效率运转、高质量发展的新路径。两校实现了制度建设、管理团队建设、教师队伍建设、集体备课与同步教研等学校治理体系与教学的全面融合、统筹安排、精准落实，大大提升了集团治理效能与精细化管理水平。</p>
-                    <p>学校借助淄博实验中学优秀的学生发展经验和教育资源，帮助学生实现了精准帮扶和快速提升。特别是在青年教师发展方面，借助淄博实验中学九大高考学科中心组的优势和名师工作室的优势，通过两校互派教师、青蓝工程结对子等一系列措施，实现了青年教师抱团式发展的良好局面。</p>
+                    <p>淄博齐盛高级中学位于鲁泰大道以北，天津路以东，是2018年由市委市政府批准建设的公办普通高级中学，学校占地132亩，建筑面积68768平方米，各项设施配备全市一流。2021年秋季学期，学校正式投入使用。</p>
+                    <p>根据市教育局实施集团化办学改革精神，以淄博实验中学为核心校，淄博齐盛高级中学为成员校，进行紧密型集团化办学模式试点。淄博实验中学将淄博齐盛高级中学的建设、发展纳入三年发展规划，实行紧密型管理，实现人财物统筹互补和优质教育资源共享共用，形成集团内学校相互促进、共同发展，逐步把淄博齐盛高级中学建设成为全市一流、走在全省乃至全国前列的新型高中学校。</p>
+                    <p>建校以来，学校先后获得省级绿色学校、市级无烟学校、区级文明校园、市中小学学生公寓A级单位、百佳青春团队、区级文明校园、市级特色高中学校等荣誉。</p>
                 </div>
             </div>
         </div>
@@ -106,7 +123,9 @@
                 <span class="close-btn">&times;</span>
                 <h2>教师队伍建设</h2>
                 <div class="modal-text">
-                    <p>学校高度重视教师队伍建设，通过多种方式构建高素质教师队伍：</p>
+                    <p>教师是学校发展的核心竞争力。淄博齐盛高级中学高度重视教师队伍建设，广纳英才，构建一支师德高尚、业务精湛、结构合理、充满活力的高素质、专业化、创新型新时代教师队伍。</p>
+                    <p>学校现有教职工149人，研究生学历104人。市级名师、名班主任3人，市级优秀教师4人，市级优秀班主任4人，市级教学能手3人，市级骨干教师10人。淄博最美教师1人，淄博市教书育人楷模1人，获"振兴淄博劳动奖章"1人，获部级和省级优课4人，省优质课一等奖2人。</p>
+                    <p>学校教师队伍主要由以下方式组成：</p>
                     <ul>
                         <li>淄博实验中学选派骨干教师</li>
                         <li>全市公开考选优秀教师</li>
@@ -114,6 +133,8 @@
                         <li>双一流名校人才特招</li>
                         <li>公费师范生招聘</li>
                         <li>部属师范院校招聘</li>
+                        <li>紧缺人才招聘</li>
+                        <li>名师引进</li>
                     </ul>
                     <p>通过集团化办学，两校教师实现互派交流，共同教研、共同备课、同步检测、同步阅卷、同步分析，形成了良好的教师发展生态。</p>
                 </div>
@@ -281,22 +302,15 @@
                 <span class="close-btn">&times;</span>
                 <h2>学校特色</h2>
                 <div class="modal-text">
-                    <div class="feature-item">
-                        <h3>🏫 集团化办学</h3>
-                        <p>与淄博实验中学实施紧密型集团化办学模式，共享优质教育资源</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>👨‍🏫 优质师资</h3>
-                        <p>由淄博实验中学选派骨干和全市公开招聘的高水平教师团队</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>📚 同步教学</h3>
-                        <p>与淄博实验中学同步教研、共同备课、同步检测、同步阅卷</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>🔄 双轨培养</h3>
-                        <p>实现高考与名校强基计划冲刺的双轨并行培养模式</p>
-                    </div>
+                    <p>学校全面贯彻党的教育方针，根据市教育局实施集团化办学改革精神，与淄博实验中学实施紧密型集团化办学，集团内两校教育资源一体化管理，党政负责人由一人担任，集团管理效能与教育教学品质有了坚强的组织保障。</p>
+                    <h3>紧密型集团化办学</h3>
+                    <p>两校在办学理念、价值追求、工作品质上融合统一，在教育教学行动、教师队伍发展、高品质高中建设中齐步共进，办学以来，已实现集团内两校"品牌共建、队伍共育、资源共享、课程共创、活动共办、文化共融、特色发展联动"的良性工作机制。淄博齐盛高中已成为展示我市高中教育改革成果的重要窗口，为紧密型集团化办学改革探索出了具有淄博经验的新路径。</p>
+                    <h3>特色教学模式</h3>
+                    <p>淄博齐盛高级中学教育教学活动与淄博实验中学同步开展、同步实施、同步管理、同步推进。在落实好两校学科组大集体备课的基础上，不断强化"学科组大备课+级部学科组小备课"的集体备课模式，打造以学科组骨干教师为师资团队、以自主编印教材为抓手的虚拟班教学常态，实现教学全面性、阶段性、层次性推进。</p>
+                    <h3>全员育人导师制</h3>
+                    <p>实行全员育人导师制，任课教师晚自习、周末自习全员轮流答疑、补弱、培优，班主任从早上学生入校到晚上学生放学全程陪伴，学校领导与管理干部实行全时段、全方位值班与巡视，保证学生在校期间有班主任和任课教师全程守护，营造安全、有序的校园环境。</p>
+                    <h3>双轨并行培养模式</h3>
+                    <p>针对学有余力、有实力冲刺高校"强基计划"资格和综合评价招生的优秀学生，采取个性化培养方式，从高一开始联合淄博实验中学共同培养，实现高考与名校冲刺的双轨并行。</p>
                 </div>
             </div>
         </div>
@@ -330,6 +344,47 @@
                 <div class="modal-text">
                     <p>本网站为淄博齐盛高级中学学生自制网站，所有内容来自网络。</p>
                     <p>网站内容仅供参考，最终解释权归淄博齐盛高级中学所有。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 添加学校基本信息模态框 -->
+        <div class="modal" id="info-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>学校基本信息</h2>
+                <div class="modal-text">
+                    <ul>
+                        <li><strong>办学性质：</strong>市属公办</li>
+                        <li><strong>主管部门：</strong>淄博市教育局</li>
+                        <li><strong>办学地点：</strong>淄博市张店区鲁泰大道469号</li>
+                        <li><strong>联系方式：</strong>0533-3180577</li>
+                        <li><strong>办学规模：</strong>学校现有36个教学班，在校学生约1800人左右</li>
+                        <li><strong>占地面积：</strong>132亩</li>
+                        <li><strong>建筑面积：</strong>68768平方米</li>
+                    </ul>
+                    <h3>办学条件</h3>
+                    <p>学校硬件设施全市一流，作为高起点、高标准、高品质建设的市重大民生实事项目，于2021年秋季学期正式投入使用。学校致力于高起点、高质量的教育信息化和智慧校园建设，各类信息化设施配备水平走在全市高中前列。现代化教室配备智慧黑板、中央空调和互动教学系统，实现两校师生实时教学互动。教学楼每层配备班主任室，实现全程靠班管理。每个教学楼设置一间音视频互通录课室，方便两校教师线上教学研讨、集体备课、教学经验交流。可同时容纳1200人的学术报告厅，配备顶尖的音响、专业的灯光舞美及声控设备，为学生打造独特且多元的教学环境。舒适的6-8人学生公寓，配备独立阳台和独卫、独浴，每层楼配备水房，为学生生活提供优质服务。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 添加学校领导信息模态框 -->
+        <div class="modal" id="leadership-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>学校领导</h2>
+                <div class="modal-text">
+                    <ul class="leadership-list">
+                        <li><strong>赵泮利：</strong>党委书记。主持学校党委工作，负责教育集团工作。</li>
+                        <li><strong>姜晓峰：</strong>党委副书记、校长。主持学校行政工作，协助赵泮利同志做好学校党委工作。分管党政办公室、财务室。分管职责范围内的安全工作、意识形态工作和党风廉政建设工作。</li>
+                        <li><strong>程国涛：</strong>党委委员、副校长。分管教务处、级部、学生工作处、团委。分管职责范围内的安全工作、意识形态工作和党风廉政建设工作。</li>
+                        <li><strong>孟庆升：</strong>党委委员、副校长。协助姜晓峰同志分管财务室，分管后勤服务中心、安办、食堂，分管学校艺体工作。分管职责范围内的安全工作、意识形态工作和党风廉政建设工作。</li>
+                        <li><strong>于金立：</strong>党委委员、纪委书记。主持学校纪检监察工作。分管职责范围内的安全工作、意识形态工作和党风廉政建设工作。</li>
+                        <li><strong>张昌华：</strong>党委委员、副校长。分管人事处、信息组，协助姜晓峰同志分管党政办公室，分管职责范围内的安全工作、意识形态工作和党风廉政建设工作。</li>
+                        <li><strong>王宝华：</strong>党委委员、级部主任。负责做好2021级部工作。</li>
+                    </ul>
+                    <p class="news-date">更新时间：2024-04-29</p>
                 </div>
             </div>
         </div>
@@ -389,7 +444,7 @@
             <div class="feature-grid">
                 <div class="class-badge">
                     <img src="./static/image/班级.jpg" alt="">
-                    <h1></h1>
+                    <h2></h2>
                     <p> </p>
                     </div>
                 <div class="vr-container">
@@ -413,44 +468,43 @@
     <section class="school-features" id="school-features">
         <div class="container">
             <h2 class="section-title">办学特色</h2>
-            <meta name="description" content="淄博齐盛高级中学特色：集团化办学、优质师资、同步教学、双轨培养，打造全市一流教育品牌。">
             <meta name="keywords" content="淄博齐盛高级中学,集团化办学,教育特色,优质师资,同步教学">
             
             <div class="features-grid">
                 <article class="feature-card">
                     <div class="feature-icon">🏫</div>
                     <h3>集团化办学</h3>
-                    <p>与淄博实验中学实施紧密型集团化办学模式，共享优质教育资源。通过"一体化管理、资源共享、优势互补"的办学机制，实现教育资源的最优配置。</p>
+                    <p>与淄博实验中学实施紧密型集团化办学模式，实现"品牌共建、队伍共育、资源共享、课程共创、活动共办、文化共融、特色发展联动"的良性工作机制。</p>
                 </article>
 
                 <article class="feature-card">
                     <div class="feature-icon">👨‍🏫</div>
                     <h3>优质师资</h3>
-                    <p>由淄博实验中学选派骨干教师、全市公开考选和全国公开选聘的高水平教师团队。实施"青蓝工程"，促进教师专业成长，打造高素质教师队伍。</p>
+                    <p>现有教职工149人，研究生学历104人。拥有市级名师、名班主任3人，市级优秀教师4人，市级骨干教师10人等高水平教师团队。</p>
                 </article>
 
                 <article class="feature-card">
                     <div class="feature-icon">📚</div>
                     <h3>同步教学</h3>
-                    <p>与淄博实验中学同步教研、共同备课、同步检测、同步阅卷。建立"学科组大备课+级部学科组小备课"的集体备课模式，确保教学质量。</p>
+                    <p>与淄博实验中学同步开展、同步实施、同步管理，强化"学科组大备课+级部学科组小备课"模式，实现教学全面性、阶段性、层次性推进。</p>
                 </article>
 
                 <article class="feature-card">
                     <div class="feature-icon">🔄</div>
                     <h3>双轨培养</h3>
-                    <p>实现高考与名校强基计划冲刺的双轨并行培养模式。针对优秀学生采取个性化培养方式，从高一开始联合淄博实验中学共同培养。</p>
+                    <p>针对优秀学生采取个性化培养方式，从高一开始联合淄博实验中学共同培养，实现高考与"强基计划"、综合评价招生双轨并行。</p>
                 </article>
             </div>
 
             <div class="features-stats">
                 <div class="stat-item">
                     <h4>教师团队</h4>
-                    <div class="stat-number">150<sup>+</sup></div>
-                    <p>优秀教师</p>
+                    <div class="stat-number">149</div>
+                    <p>教职工</p>
                 </div>
                 <div class="stat-item">
                     <h4>办学规模</h4>
-                    <div class="stat-number">2100</div>
+                    <div class="stat-number">1800</div>
                     <p>在校学生</p>
                 </div>
                 <div class="stat-item">
@@ -555,7 +609,7 @@
     <footer class="site-footer">
         <div class="container">
             <div class="copyright">
-                <p></p>
+                <p>地址：淄博市张店区鲁泰大道469号 | 电话：0533-3180577</p>
             </div>
     </div>
     </footer>
@@ -632,13 +686,5 @@
         });
     </script>
 
-    <!-- 添加面包屑导航 -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">首页</a></li>
-            <li class="breadcrumb-item"><a href="#school-features">学校特色</a></li>
-            <li class="breadcrumb-item active" aria-current="page">校园风光</li>
-        </ol>
-    </nav>
-</body>
+   
 </html>
