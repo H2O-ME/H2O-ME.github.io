@@ -1,10 +1,3 @@
-/* 修改 header 样式 */
-header {
-    background: url(../static/Screenshot_2024-10-26-17-55-10-131_com.tencent.mobileqq-edit.jpg);
-    background-size: cover;
-    height: 165px;
-}
-
 /* 修改轮播图样式 */
 .slides_container img {
     width: 100%;

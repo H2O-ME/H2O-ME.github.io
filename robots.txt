@@ -2,5 +2,48 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
 
-Sitemap: https://www.zbqsgz.edu.cn/sitemap.xml 
+# 允许爬取重要页面
+Allow: /news/           # 新闻页面
+Allow: /about/         # 关于我们
+Allow: /admission/     # 招生信息
+Allow: /teachers/      # 师资力量
+
+# 爬取频率建议
+Crawl-delay: 10
+
+# 网站地图
+Sitemap: https://www.zbqsgz.edu.cn/sitemap.xml
+
+# HTML 标签爬取设置
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: Sosospider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+# 移动端爬虫设置
+User-agent: Baiduspider-mobile
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+# 图片爬虫设置
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Baiduspider-image
+Allow: /
