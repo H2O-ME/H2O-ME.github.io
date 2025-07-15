@@ -713,6 +713,73 @@ body.modal-open {
     }
 }
 
+/* 校园风光部分样式 */
+.campus-section {
+    padding: 4rem 0;
+    background: #fff;
+}
+
+.campus-section .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* 校园风光图片展示样式 */
+.campus-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 6rem;
+    width: 100%;
+}
+
+/* 添加shot-on caption样式 */
+.shot-on-caption {
+    text-align: right;
+    color: #666;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 0;
+    padding-top: 66.66%; /* 4:3比例 */
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* 适配不同屏幕尺寸 */
+@media screen and (max-width: 1200px) {
+    .campus-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .campus-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* 校园风光模块样式 */
 .campus-section {
     padding: 80px 0;
