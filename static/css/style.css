@@ -565,62 +565,6 @@ footer {
     align-items: start;
 }
 
-/* 浮动广告样式 */
-.floating-ad {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    z-index: 1000;
-    width: 300px;
-    animation: slideIn 0.5s ease-out;
-}
-
-.ad-content {
-    text-align: center;
-}
-
-.ad-content h3 {
-    color: #333;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-
-.ad-content p {
-    color: #666;
-    margin-bottom: 15px;
-    font-size: 0.9em;
-}
-
-.ad-button {
-    display: inline-block;
-    background: #ff0000;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.ad-button:hover {
-    background: #b30000;
-}
-
-/* 浮动广告动画 */
-@keyframes slideIn {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 /* 班徽样式 */
 .class-badge {
     text-align: center;
@@ -956,6 +900,16 @@ body.modal-open {
     border: 1px solid rgba(0,0,0,0.05);
 }
 
+.bilibili-item {
+    background: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
 .stat-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
@@ -1073,6 +1027,22 @@ body.modal-open {
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 /* 适配不同屏幕尺寸 */
@@ -1331,20 +1301,39 @@ a:focus {
 
 .notice-btn {
     display: inline-block;
-    background: #c8141e;
-    color: #fff;
-    border: none;
-    padding: 12px 40px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: bold;
-    margin: 20px auto 0;
-    text-align: center;
+    transition: all 0.3s ease;
+    margin: 0 5px;
 }
 
-.notice-btn:hover {
-    background: #a11018;
+.notice-btn-primary {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+}
+
+.notice-btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.notice-btn-secondary {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.notice-btn-secondary:hover {
+    background-color: #f8f9fa;
+}
+
+.notice-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 /* 移除可能影响点击的样式 */
