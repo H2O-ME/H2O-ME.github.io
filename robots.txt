@@ -16,7 +16,7 @@ Allow: /teachers/      # 师资力量
 Crawl-delay: 10
 
 # 网站地图
-Sitemap: https://www.zbqsgz.edu.cn/sitemap.xml
+Sitemap: https://qsgz.thw.lol/sitemap.xml
 
 # HTML 标签爬取设置
 User-agent: Baiduspider

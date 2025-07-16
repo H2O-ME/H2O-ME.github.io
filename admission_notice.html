@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>录取通知书生成器 - 淄博齐盛高级中学</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="./admission_notice.css">
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="./admission_notice.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>录取通知书生成器</h1>
+        <div class="input-section">
+            <label for="studentName">请输入您的姓名：</label>
+            <input type="text" id="studentName" placeholder="请输入您的姓名">
+            <button id="generateBtn">生成通知书</button>
+        </div>
+        <div class="notice-container">
+            <div class="notice-preview">
+                <img src="../static/image/14.jpg" alt="录取通知书" id="noticeImage">
+                <div class="name-overlay" id="nameOverlay"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

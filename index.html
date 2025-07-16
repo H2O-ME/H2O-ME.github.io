@@ -64,6 +64,7 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <script src="../static/js/jquery.min.js"></script>
     <script src="../static/js/app.min.js"></script>
+    <script src="./floating-ad.js"></script>
     <script>
         function closeNotice() {
             const notice = document.getElementById('siteNotice');
@@ -146,13 +147,14 @@
     <!-- 这是弹窗 -->
     <div class="site-notice" id="siteNotice">
         <div class="notice-content">
-            <h2>你好，新同学</h2>
+            <h2>通知公告</h2>
             <div class="notice-text">
-                <h3>梦想启航处 青春新序章</h3>
-                <p>     高中是人生的重要转折点，希望你们在齐盛高中这片沃土上，勤奋学习、勇于探索，让青春绽放最美的光彩！”</p>
-                <p style="text-align:right;">—— 淄博齐盛高中校长 姜晓峰</p>
+                <h2 style="text-align:center;"></h2>
+                <p>亲爱的2025级新生：</p>
+                <p>    欢迎你们！淄博齐盛高中2025级分班信息查询系统已经开放，请按学校要求于7月15日上午到学校报到。可通过以下网址进行分班查询：</p>
+                <p><a href="https://query.vzibo.net/query/type/c2ec82ae8ba1b88841289c72705b41ed.html">https://query.vzibo.net/query/type/c2ec82ae8ba1b88841289c72705b41ed.html</a></p>
             </div>
-            <button type="button" class="notice-btn" id="closeNotice" onclick="closeNotice()">不负期待</button>
+            <button type="button" class="notice-btn" id="closeNotice" onclick="closeNotice()">关闭</button>
         </div>
     </div>
 
@@ -171,6 +173,15 @@
             </ul>
         </div>
     </nav>
+
+<!-- Floating Advertisement -->
+<div class="floating-ad">
+    <div class="ad-content">
+        <h3>录取通知书生成器</h3>
+        <p>立即生成您的录取通知书</p>
+        <a href="admission_notice.html" class="ad-button">立即生成</a>
+    </div>
+</div>
 
     <div class="modal-container">
         <div class="modal" id="intro-modal">
@@ -560,6 +571,7 @@
             <div class="features-grid">
                 <article class="feature-card">
                     <div class="feature-icon">👨‍🏫</div>
+                    <div class="wyh是sb"></div>
                     <h3>教师团队</h3>
                     <p>学校现有教职工164人，其中，省特级教师1人，齐鲁名师建设工程人选1人，淄博名师3人，淄博名师（名班主任）建设工程人选2人，市优秀教师、优秀班主任18人，市教学能手8人，市级最美教师1人，市级教书育人楷模2人，市区骨干教师19人，硕士研究生109人。</p>
                 </article>
@@ -595,6 +607,54 @@
                 </div>
             </div>
 
+            <!-- 学科组合照展示 -->
+            <div class="subject-group-gallery">
+                <!-- 语文组 -->
+                <div class="gallery-item">
+                    <img src="./static/image/chinese.jpg" alt="语文组合照" class="gallery-image">
+                </div>
+
+                <!-- 数学组 -->
+                <div class="gallery-item">
+                    <img src="./static/image/math.jpg" alt="数学组合照" class="gallery-image">
+                </div>
+
+                <!-- 英语组 -->
+                <div class="gallery-item">
+                    <img src="./static/image/english.jpg" alt="英语组合照" class="gallery-image">
+                </div>
+
+                <!-- 物理组 -->
+                <div class="gallery-item">
+                    <img src="./static/image/physics.jpg" alt="物理组合照" class="gallery-image">
+                </div>
+
+                <!-- 化学组 -->
+                <div class="gallery-item">
+                    <img src="./static/image/chemistry.jpg" alt="化学组合照" class="gallery-image">
+                </div>
+
+                <!-- 生物组 -->
+                <div class="gallery-item">
+                    <img src="./static/image/biology.jpg" alt="生物组合照" class="gallery-image">
+                </div>
+
+                <!-- 政治组 -->
+                <div class="gallery-item">
+                    <img src="./static/image/politics.jpg" alt="政治组合照" class="gallery-image">
+                </div>
+
+                <!-- 历史组 -->
+                <div class="gallery-item">
+                    <img src="./static/image/history.jpg" alt="历史组合照" class="gallery-image">
+                </div>
+
+                <!-- 地理组 -->
+                <div class="gallery-item">
+                    <img src="./static/image/geography.jpg" alt="地理组合照" class="gallery-image">
+                </div>
+            </div>
+
             <!-- 测试添加一下结构化数据 -->
             <script type="application/ld+json">
             {
@@ -617,7 +677,7 @@
             </script>
         </div>
     </section>
-
+    <h4>‎</h4>
     <!-- 学生发展页 -->
     <section class="student-development" id="student-development">
         <div class="container">
@@ -634,7 +694,7 @@
                 <article class="feature-card">
                     <div class="feature-icon">🌟</div>
                     <h3>特色活动</h3>
-                    <p>举办三届“青春向党身边榜样”十佳中学生暨新时代好少年评选，每学期举办社团嘉年华。</p>
+                    <p>举办三届"青春向党身边榜样"十佳中学生暨新时代好少年评选，每学期举办社团嘉年华。</p>
                 </article>
 
                 <article class="feature-card">
