@@ -6,24 +6,51 @@
     <title>录取通知书生成器 - 淄博齐盛高级中学</title>
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="./admission_notice.css">
-    <script src="../static/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="./admission_notice.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>录取通知书生成器</h1>
-        <div class="input-section">
-            <label for="studentName">请输入您的姓名：</label>
-            <input type="text" id="studentName" placeholder="请输入您的姓名">
-            <button id="generateBtn">生成通知书</button>
-        </div>
-        <div class="notice-container">
-            <div class="notice-preview">
-                <img src="../static/image/14.jpg" alt="录取通知书" id="noticeImage">
-                <div class="name-overlay" id="nameOverlay"></div>
+        <div class="card">
+            <div class="card-header">
+                <h1>录取通知书生成器</h1>
+                <p class="subtitle">淄博齐盛高级中学 2025级新生</p>
+            </div>
+            
+            <div class="card-body">
+                <div class="input-section">
+                    <div class="form-group">
+                        <label for="studentName">请输入您的姓名：</label>
+                        <input type="text" id="studentName" placeholder="请输入您的姓名" class="form-control">
+                    </div>
+                    <div class="button-group">
+                        <button id="generateBtn" class="btn btn-primary">
+                            <span class="btn-icon">✏️</span> 生成通知书
+                        </button>
+                        <button id="downloadBtn" class="btn btn-download" disabled>
+                            <span class="btn-icon">⬇️</span> 下载通知书
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="notice-container">
+                    <div class="notice-card">
+                        <div class="notice-preview">
+                            <img src="../static/image/14.jpg" alt="录取通知书" id="noticeImage" class="notice-image">
+                            <div class="name-overlay" id="nameOverlay"></div>
+                        </div>
+                        <div class="notice-footer">
+                            <div class="watermark">淄博齐盛高级中学</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-footer">
+                <p class="hint">提示：生成通知书后，点击下载按钮保存图片</p>
             </div>
         </div>
     </div>
-    <h2>注：不支持直接下载，如需要请截屏</h2>
 </body>
 </html>

@@ -1,85 +1,309 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Base Styles */
+:root {
+    --primary-color: #e74c3c;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --border-radius: 12px;
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f0f2f5;
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
+/* Container & Card */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.input-section {
+.card {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    padding: 30px 30px;
     text-align: center;
-    margin-bottom: 30px;
+}
+
+.card-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Form Styles */
+.input-section {
+    margin: 0 auto 30px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 label {
     display: block;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-
-input[type="text"] {
-    padding: 10px 20px;
-    font-size: 1.1em;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    width: 300px;
-    margin-bottom: 20px;
-}
-
-button {
-    background-color: #ff0000;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #b30000;
-}
-
-.notice-container {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    width: 100%;
     text-align: center;
+}
+
+.form-control {
+    width: 100%;
+    max-width: 400px;
+    padding: 14px 20px;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: var(--transition);
+    margin: 0 auto;
+    display: block;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    min-width: 160px;
+}
+
+.btn-icon {
+    margin-right: 8px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.btn-download {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-download:hover:not(:disabled) {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);
+}
+
+.btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Notice Preview */
+.notice-container {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-in-out;
+    margin-top: 20px;
+}
+
+.notice-container.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.notice-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
 }
 
 .notice-preview {
     position: relative;
-    display: inline-block;
+    width: 100%;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;
+    line-height: 0;
 }
 
-#noticeImage {
+.notice-image {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .name-overlay {
     position: absolute;
-    font-size: 24px;
+    font-size: 20px;  /* Default size for larger screens */
     font-weight: bold;
     color: #333;
     text-align: center;
     pointer-events: none;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
     transition: opacity 0.3s;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .name-overlay.hidden {
     opacity: 0;
 }
 
-.notice-container.visible {
-    opacity: 1;
-    visibility: visible;
+.notice-footer {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.watermark {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Card Footer */
+.card-footer {
+    padding: 15px 30px;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.hint {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .card-body {
+        padding: 20px 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 14px 20px;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .form-control {
+        padding: 12px 16px;
+    }
+    
+    .name-overlay {
+        font-size: 16px;  /* Slightly smaller for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --border-radius: 8px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .card-header {
+        padding: 20px 15px;
+    }
+    
+    .card-header h1 {
+        font-size: 1.3rem;
+    }
+    
+    .name-overlay {
+        font-size: 16px;  /* Smallest size for mobile devices */
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.notice-card {
+    animation: fadeIn 0.5s ease-out forwards;
 }
