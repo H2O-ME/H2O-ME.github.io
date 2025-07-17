@@ -129,6 +129,44 @@
         }
         window.onload = checkFirstVisit;
     </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </head>
 <body>
     <header role="banner">
@@ -217,6 +255,10 @@
                 <span class="close-btn">&times;</span>
                 <h2>学校领导</h2>
                 <div class="modal-text">
+                    <p>此页可以滑动</p>
+                    <div class="gallery-item">
+                        <img src="./static/image/15.jpg" alt="学校领导" class="gallery-image">
+                    </div>
                     <ul class="leadership-list">
                         <li><strong>赵泮利：</strong>党委书记。主持学校党委工作，负责教育集团工作。</li>
                         <li><strong>姜晓峰：</strong>党委副书记、校长。主持学校行政工作，协助赵泮利同志做好学校党委工作。分管党政办公室、财务室。分管职责范围内的安全工作、意识形态工作和党风廉政建设工作。</li>
@@ -270,6 +312,9 @@
                         <li>任课教师晚自习、周末自习全员轮流答疑、补弱、培优</li>
                         <li>班主任从早到晚全程陪伴</li>
                         <li>学校领导与管理干部全时段、全方位值班与巡视</li>
+                        <div class="gallery-item">
+                            <img src="./static/image/17.gif" alt="徐泗龙" class="gallery-image">
+                        </div>
                         <li>针对优秀学生实施个性化培养方案</li>
                         <li>与淄博实验中学联合培养，实现高考与名校冲刺双轨并行</li>
                     </ul>
@@ -315,6 +360,9 @@
                 <div class="modal-text">
                     <p>学校全面贯彻党的教育方针，根据市教育局实施集团化办学改革精神，与淄博实验中学实施紧密型集团化办学，集团内两校教育资源一体化管理，党政负责人由一人担任，集团管理效能与教育教学品质有了坚强的组织保障。</p>
                     <h3>紧密型集团化办学</h3>
+                    <div class="gallery-item">
+                        <img src="./static/image/16.jpg" alt="学校全景" class="gallery-image">
+                    </div>
                     <p>两校在办学理念、价值追求、工作品质上融合统一，在教育教学行动、教师队伍发展、高品质高中建设中齐步共进，办学以来，已实现集团内两校"品牌共建、队伍共育、资源共享、课程共创、活动共办、文化共融、特色发展联动"的良性工作机制。淄博齐盛高中已成为展示我市高中教育改革成果的重要窗口，为紧密型集团化办学改革探索出了具有淄博经验的新路径。</p>
                     <h3>特色教学模式</h3>
                     <p>淄博齐盛高级中学教育教学活动与淄博实验中学同步开展、同步实施、同步管理、同步推进。在落实好两校学科组大集体备课的基础上，不断强化"学科组大备课+级部学科组小备课"的集体备课模式，打造以学科组骨干教师为师资团队、以自主编印教材为抓手的虚拟班教学常态，实现教学全面性、阶段性、层次性推进。</p>
@@ -329,40 +377,7 @@
         <div class="modal" id="admission-modal">
             <div class="modal-content">
                 <span class="close-btn">&times;</span>
-                <h2>来源：抖音</h2>
-                <div class="dy-item">
-                    <img src="./static/image/dy/1.png" alt="来源：抖音 方程式" class="gallery-image">
-                </div>
-                <div class="dy-item">
-                    <img src="./static/image/dy/1.png" alt="来源：抖音 方程式" class="gallery-image">
-                </div>
-                <div class="dy-item">
-                    <img src="./static/image/dy/2.png" alt="来源：抖音 方程式" class="gallery-image">
-                </div>
-                <div class="dy-item">
-                    <img src="./static/image/dy/3.png" alt="来源：抖音 方程式" class="gallery-image">
-                </div>
-                <div class="dy-item">
-                    <img src="./static/image/dy/4.png" alt="来源：抖音 方程式" class="gallery-image">
-                </div>
-                <div class="dy-item">
-                    <img src="./static/image/dy/5.png" alt="来源：抖音 方程式" class="gallery-image">
-                </div>
-                <div class="dy-item">
-                    <img src="./static/image/dy/6.png" alt="来源：抖音 方程式" class="gallery-image">
-                </div>
-                <div class="dy-item">
-                    <img src="./static/image/dy/7.png" alt="来源：抖音 方程式" class="gallery-image">
-                </div>
-                <div class="dy-item">
-                    <img src="./static/image/dy/8.png" alt="来源：抖音 方程式" class="gallery-image">
-                </div>
-                <div class="dy-item">
-                    <img src="./static/image/dy/9.png" alt="来源：抖音 方程式" class="gallery-image">
-                </div>
-                <div class="dy-item">
-                    <img src="./static/image/dy/10.png" alt="来源：抖音 方程式" class="gallery-image">
-                </div>
+                <h2>广告位招租</h2>
                 </div>
             </div>
         </div>
@@ -406,7 +421,7 @@
                 <span class="close-btn">&times;</span>
                 <h2>淄博齐盛高中2025级高一新生分班结果查询</h2>
                 <div class="modal-text">
-                    <p>亲爱的2025级新生：        
+                    <p>亲爱的2025级新生：         
                     <p>    欢迎你们！淄博齐盛高中2025级分班信息查询系统已经开放，请按学校要求于7月15日上午到学校报到。可通过以下网址进行分班查询：https://query.vzibo.net/query/type/c2ec82ae8ba1b88841289c72705b41ed.html</p>
                     <p class="news-date">发布时间：2025-07-13</p>
                 </div>
@@ -497,6 +512,9 @@
                     <p>齐盛校园，书声琅琅，青春激荡。淄博齐盛高级中学以紧密融合型集团化办学为依托，围绕立德树人根本任务，培根铸魂，打造精品，臻美臻善，日进日新。学校以"打造激发学生共情的校园文化、赓续浸润学生灵魂的红色基因、构建滋养学生生命的课程体系、拓展润泽学生心灵的空间格局、搭建塑造学生健全人格的共育体系"为重点，逐步构建有温度的全环境育人新格局，教育教学呈现出蓬勃的生机和活力。</p>
                     
                     <h3>打造激发学生共情的校园文化</h3>
+                    <div class="dy-item">
+                        <img src="./static/image/18.jpg" alt="咸鱼" class="dy-image">
+                    </div>
                     <p>文化是一种思想，一种气质，更是一种底蕴，是学校内涵发展的主要载体。自建校以来，学校注重校园文化建设，秉持淄博实验中学教育集团"求真惟实 守正出新"办学理念，努力构建"见贤思齐 于斯为盛"学校精神，"团结勤奋 终身学习"的核心竞争力，"齐盛出品 必出精品"的工作标准追求，"齐盛辉煌 我辈开启；齐盛荣耀 我辈创造"的责任使命担当，以及"攀登、思齐、聚力、深耕"年度文化关键词深入人心。</p>
                     
                     <h3>赓续浸润学生灵魂的红色基因</h3>
